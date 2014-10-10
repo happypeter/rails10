@@ -1,10 +1,9 @@
-### Rails10 -- 十周学会 rails
-是一套零基础开始学习 web 开发的系统教材，每章会有相应视频
+### Rails 十日谈
+
+是一套零基础开始学习 web 开发的系统教材，每章有相应视频。文字内容在 gh-pages 分支上呢
 
 ### 课程视频
 
 <http://haoqicat.com/happypeter/rails10>
-
-rails 是否适合初学者？http://yedingding.com/2013/04/22/rails-for-beginners.html
 
 
