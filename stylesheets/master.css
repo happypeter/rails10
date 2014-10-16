@@ -446,3 +446,43 @@ table.rdata tr td.no-wd {
 div.slide {
   text-align: center;
 }
+
+
+/* index table */
+.index-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.index-table>tbody>tr>td {
+  border: 1px solid #ddd;
+  line-height: 1.5;
+  padding: 20px;
+  vertical-align: middle;
+}
+.index-table .episode-title {
+  padding: 0 !important;
+}
+.index-table .odd {
+  background-color: #f9f9f9;
+}
+.episode-wrap:hover {
+  background-color: #7EB6AD;
+  color: white;
+}
+.episode-wrap:hover a{
+  color: #fff !important;
+}
+.index-table .episode-title a {
+  display: block;
+  padding: 20px;
+  color: #c0865e;
+}
+.index-table .episode-length {
+  width: 100px;
+  text-align: center;
+}
+.index-table .episode-index {
+   text-align: center;
+   width: 60px;
+}
