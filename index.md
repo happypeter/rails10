@@ -30,7 +30,7 @@ title: 目录
     <tr class="episode-wrap">
       <td class="episode-index">2</td>
       <td class="episode-title">
-        <a href="01_install_rails.html">
+        <a href="01_getrails.html">
           安装 Rails
         </a>
       </td>
