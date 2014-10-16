@@ -8,7 +8,7 @@ title: 目录
     <tr class="episode-wrap">
       <td class="episode-index">0</td>
       <td class="episode-title">
-        <a href="00_course_intro.html">
+        <a href="00_intro.html">
           课程介绍
         </a>
       </td>
