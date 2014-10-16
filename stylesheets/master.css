@@ -3,18 +3,6 @@ body {
   background: #dda;
   color: #222;
 }
-
-a:visited {
-  color: #444;
-}
-
-.more { font-size: 0.7em;}
-
-img.right {
-  float: right;
-  margin: 15px;
-}
-
 #wrapper {
   width: 50em;
   margin: 2em auto 0;
@@ -243,4 +231,9 @@ div.slide {
 .index-table .episode-index {
    text-align: center;
    width: 60px;
+}
+
+/* common */
+a {
+  text-decoration: none;
 }
