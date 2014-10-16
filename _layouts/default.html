@@ -4,10 +4,10 @@
 <html>
   <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-    <title>Rails10</title>
-    <link rel="stylesheet" href="stylesheets/master.css" type="text/css" media="screen" charset="utf-8"/>
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="../stylesheets/master.css" type="text/css" media="screen" charset="utf-8"/>
     <link rel="icon" href="/rails10/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="/rails10/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="rails10/favicon.ico" type="image/x-icon">
   </head>
   <body>
     <div id='wrapper'>
@@ -22,12 +22,13 @@
         </ul>
       </div>
       <div id='content'>
+        <h2>{{ page.title }}</h2>
         {{ content }}
         <div class='clearfix'></div>
       </div>
     </div>
     <div id='footer'>
-     Hosted by <a href='http://github.com' target='_blank'>GitHub</a> and powered by <a href='http://github.com/mojombo/jekyll'>Jekyll</a>.
+      Hosted by <a href='http://github.com' target='_blank'>GitHub</a> and powered by <a href='http://github.com/mojombo/jekyll'>Jekyll</a>.
     </div>
   </body>
 </html>
