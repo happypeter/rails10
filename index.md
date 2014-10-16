@@ -30,8 +30,30 @@ title: 目录
     <tr class="episode-wrap">
       <td class="episode-index">2</td>
       <td class="episode-title">
-        <a href="01_getrails.html">
+        <a href="02_getrails.html">
           安装 Rails
+        </a>
+      </td>
+      <td class="episode-length">
+        x min
+      </td>
+    </tr>
+    <tr class="episode-wrap">
+      <td class="episode-index">3</td>
+      <td class="episode-title">
+        <a href="03_helloworld.html">
+          hello world
+        </a>
+      </td>
+      <td class="episode-length">
+        x min
+      </td>
+    </tr>
+    <tr class="episode-wrap">
+      <td class="episode-index">4</td>
+      <td class="episode-title">
+        <a href="04_staticpage.html">
+          静态页面
         </a>
       </td>
       <td class="episode-length">

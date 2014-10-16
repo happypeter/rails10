@@ -83,7 +83,8 @@ body {
 }
 
 #content p {
-  line-height: 140%;
+  line-height: 1.75;
+  color: #595959;
 }
 
 span.date {
@@ -126,7 +127,6 @@ pre {
   padding: 1em;
   overflow: auto;
   color: black;
-  line-height: 120%;
   font-family: "Consolas","Courier New",Courier,mono;
   font-size: 12px;
   letter-spacing: 0;
@@ -140,6 +140,7 @@ code {
 
 pre code {
   border: none;
+  line-height: 1.8;
 }
 
 table.post-list {
