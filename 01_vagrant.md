@@ -48,3 +48,4 @@ vagrant up 之后，系统就装好并启动起来了，可以运行
 
 我在系统上得到的是一个新建的 virtualbox 虚拟机。可以打开 virtualbox ，到 settings 中来给这个虚拟机条调一下内存大小。调到 2048 。
 
+<!-- https://laracasts.com/search?q=vagrant -->

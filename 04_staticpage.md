@@ -3,6 +3,7 @@ layout: default
 title: 静态页面
 ---
 
+参考 railsforzombies view
 介绍一下 asset pipeline 的基本功能。
 
 - 图片
