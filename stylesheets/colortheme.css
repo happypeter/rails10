@@ -1,12 +1,19 @@
+
+.highlight .language-diff{
+  line-height: 27px;
+  /* 27 = 7x2 + 13 */
+  padding: 7px 0;
+  font-size: 13px;
+}
+
+
 .highlight .language-diff .gi {
   background: #EAFFEA;
   /* github green */
 }
 
+
 .highlight .language-diff .gd {
   background-color: #ffecec;
-  line-height: 27px;
-  /* 27 = 7x2 + 13 */
-  padding: 7px 0;
-  font-size: 13px;
+  /* github diff red */
 }
