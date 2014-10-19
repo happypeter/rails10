@@ -42,14 +42,16 @@ Install MySQL
 
     sudo apt-get install mysql-server  mysql-client  libmysqlclient-dev
 
-
 内容挺多，刚接触 rails 的人不用一下子都理解，记住我的这个页面的链接，以后慢慢研究就行。
 
 ### install rails
 
-    gem install rails -v 4.2.0
+为了让你可以跟着我一起做，所以咱俩都把版本控制在 4.1.2 吧，经管我的代码应该是用 rails 4.0 只上的版本都可以跑起来
 
-### 参考资料
+    gem install rails -v 4.1.2
 
-- [railsforzombies 2](https://www.youtube.com/watch?v=K0Y0yQNDrEc)
-- [railstutorial](https://www.railstutorial.org/book/beginning#sec-installing_rails)
+
+### 运行 rails
+
+如果看到这样的默认页面，表示 rails 项目已经正常运行啦。
+
