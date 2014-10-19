@@ -2,8 +2,12 @@
 layout: default
 title: 简介
 ---
+强调 Rails 就是适合初学者的，
 
-Rails10 is the shit!
+html/css/js/ruby 其实入门都只要几十分钟，但是如果不拿它们实际做东西，那学习就会走弯路
+Rails 中充满了摩登开发者的工作流：
+
+关注 Programmer Happiness
 
 Jeffery: Jquery is just appealing to beginners, and that's good.
 
