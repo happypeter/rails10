@@ -36,17 +36,7 @@ title: 安装 rails
     rbenv install 2.1.2
     rbenv global 2.1.2
 
-安装一个 gem ，叫 bundler
-
-    echo "gem: --no-ri --no-rdoc" > ~/.gemrc
-    gem install bundler
-    rbenv rehash
-
-安装 MySQL 数据库
-
-    sudo apt-get install mysql-server  mysql-client  libmysqlclient-dev
-
-因为是本地开发环境，就不设置密码了。
+运行 `ruby -v` 命令，看到 2.1.2 的输出，那 ruby 安装就胜利完成了。
 
 内容挺多，刚接触 rails 的人不用一下子都理解，记住我的这个页面的链接，以后慢慢研究就行。
 
@@ -64,6 +54,17 @@ title: 安装 rails
 
 如果显示 4.1.2 那就一切就绪了。
 
+安装一个 gem ，叫 bundler
+
+    echo "gem: --no-ri --no-rdoc" > ~/.gemrc
+    gem install bundler
+    rbenv rehash
+
+安装 MySQL 数据库
+
+    sudo apt-get install mysql-server  mysql-client  libmysqlclient-dev
+
+因为是本地开发环境，就不设置密码了。
 
 
 
