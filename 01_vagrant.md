@@ -38,15 +38,7 @@ vagrant up 之后，系统就装好并启动起来了，可以运行
 
     vagrant ssh
 
-登陆到虚拟机里面，默认的用户叫做 vagrant，可以用 `whoami` 查看一下。
-
-比如可以敲
-
-    sudo init 0
-
-来关闭这个 ubuntu 系统。
-
-我在系统上得到的是一个新建的 virtualbox 虚拟机。可以打开 virtualbox ，到 settings 中来给这个虚拟机条调一下内存大小。调到 2048 。添加下面几行到 Vagrantfile 文件
+登陆到虚拟机里面，默认的用户叫做 vagrant，可以用 `whoami` 查看一下。在查看一下内存，用 `free -m` 命令，发现默认内存大小还不到500M，所以敲 Ctrl-D 退出来。添加下面几行到 Vagrantfile 文件。
 
 {% highlight ruby%}
 config.vm.provider "virtualbox" do |v|
@@ -54,5 +46,10 @@ config.vm.provider "virtualbox" do |v|
 end
 {% endhighlight %}
 
+然后执行
 
-<!-- https://laracasts.com/search?q=vagrant -->
+    vagrant reload
+
+来加载设置就可以了。
+
+关于 vagrant 的更为丰富的使用方法，参考 <http://happycasts.net/episodes/105>
