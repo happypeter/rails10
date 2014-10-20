@@ -129,16 +129,20 @@ pre {
 
 
 /* code */
+pre code {
+  font-weight: lighter;
+  padding: 0;
+  font-size: 13px;
+  background: none;
+  color: white;
+}
 code {
-  background: #f8f8f8;
-  border: 1px solid #E7E5DC;
-  padding: 0.2em;
+  font-size: 15px;
+  padding: 3px 5px;
+  background: #eee;
+  color: teal;
 }
 
-pre code {
-  border: none;
-  line-height: 1.8;
-}
 
 div.related {
   margin-bottom: 2em;
