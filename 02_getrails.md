@@ -8,7 +8,7 @@ title: 安装 rails
 ### 先来安装 ruby 语言
 
 
-![](http://media.happycasts.net/pic/rails10/ruby.jpefg)
+![](http://media.happycasts.net/pic/rails10/ruby.jpeg)
 
 更新一下系统软件仓库列表：
 
