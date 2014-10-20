@@ -115,20 +115,28 @@ div.post {
 
 .post br { margin-bottom: 10px;}
 
-pre {
-  background: #f8f8f8;
-  border: 1px solid #E7E5DC;
-  border-width: 1px 0 4px 6px;
-  padding: 1em;
-  overflow: auto;
-  color: black;
-  font-family: "Consolas","Courier New",Courier,mono;
-  font-size: 12px;
-  letter-spacing: 0;
-}
 
 
 /* code */
+
+pre {
+  overflow: auto;
+  display: block;
+  font-family: Monaco,Consolas,"Lucida Console",monospace;
+  background-color: #333;
+  border: 0;
+  color: #e9e4e5;
+  line-height: 1.9em;
+  border-radius: 5px;
+  background-clip: padding-box;
+  padding: 20px!important;
+  white-space: pre;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #888;
+}
+
 pre code {
   font-weight: lighter;
   padding: 0;
@@ -207,8 +215,8 @@ div.slide {
   text-align: center;
 }
 .index-table .episode-index {
-   text-align: center;
-   width: 60px;
+ text-align: center;
+ width: 60px;
 }
 
 /* common */
