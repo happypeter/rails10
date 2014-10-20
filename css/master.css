@@ -72,17 +72,12 @@ body {
   text-align: center;
 }
 
-#content {
+.content {
   padding: 2em;
 }
 
-#content h2 {
-  margin: 0 0 0.5em 0;
-  color: black;
-  font-size: 1.5em;
-}
 
-#content p {
+.content p {
   line-height: 1.75;
   color: #595959;
 }
