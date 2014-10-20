@@ -41,8 +41,8 @@ title: 目录
     <tr class="episode-wrap">
       <td class="episode-index">3</td>
       <td class="episode-title">
-        <a href="03_helloworld.html">
-          hello world
+        <a href="03_run.html">
+          Hello World
         </a>
       </td>
       <td class="episode-length">
