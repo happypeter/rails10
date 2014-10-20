@@ -3,12 +3,13 @@ layout: default
 title: 安装 rails
 ---
 
-系统是 ubuntu 14.04 。
+注意，操作系统是 ubuntu 14.04 。
 
 ### 先来安装 ruby 语言
 
-
 ![](http://media.happycasts.net/pic/rails10/ruby.jpeg)
+
+很多人直觉上认为要先学 ruby 再来看 rails，这个我不同意。第一，不用 rails 不作出点实际的东西，编程语言学习必然走纸上谈兵的弯路；第二，实际上，ruby 本身是一种非常人性化的语言，仅仅就我的这门课来讲，用到的 ruby 语句都是很简单的，可以看懂的。So take it esay!
 
 更新一下系统软件仓库列表：
 
@@ -44,6 +45,8 @@ title: 安装 rails
 安装 MySQL 数据库
 
     sudo apt-get install mysql-server  mysql-client  libmysqlclient-dev
+
+因为是本地开发环境，就不设置密码了。
 
 内容挺多，刚接触 rails 的人不用一下子都理解，记住我的这个页面的链接，以后慢慢研究就行。
 
