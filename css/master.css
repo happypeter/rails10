@@ -127,6 +127,8 @@ pre {
   letter-spacing: 0;
 }
 
+
+/* code */
 code {
   background: #f8f8f8;
   border: 1px solid #E7E5DC;
@@ -136,29 +138,6 @@ code {
 pre code {
   border: none;
   line-height: 1.8;
-}
-
-table.post-list {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-table.post-list a {
-  color: #262;
-  font-weight: bold;
-}
-
-table.post-list th {
-  text-align: left;
-}
-
-table.post-list td, table.post-list th {
-  padding: 0.5em 0.3em;
-  border-bottom: 1px solid #dba;
-}
-
-table.post-list tr:last-child td, table.post-list tr:last-child th {
-  border-bottom: 0;
 }
 
 div.related {
