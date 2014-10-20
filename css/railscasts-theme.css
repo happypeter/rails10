@@ -1,0 +1,89 @@
+.highlight {
+  margin: 10px 0;
+}
+
+
+
+.highlight .sh {
+  color: #a4c260;
+}
+.highlight .vg {
+  color: #d0cffe;
+}
+
+pre {
+  background: #232323;
+  color: #E6E0DB;
+}
+.highlight pre code{
+  background: none;
+}
+
+.highlight .k {
+  color: #cb7832;
+}
+
+.highlight .nf {
+  color: #ffc56d;
+}
+
+/* name of class */
+.highlight .nc {
+  color: #fff;
+}
+
+
+.highlight .no, .highlight .o {
+  color: #fff;
+}
+
+/*keep things to defualt color*/
+.highlight .kp, .highlight .p, .highlight .n{
+  color: #E6E0DB;
+}
+
+.highlight .vi {
+  color: #d0cffe;
+}
+
+
+
+.highlight .ss {
+  color: #6c9cbd;
+}
+
+.highlight .kp{
+  color: #6c9cbd;
+}
+.highlight .nb {
+  color:#CB7832;
+}
+
+/* 'sting' "sting" integer  ::: green */
+.highlight .s1, .highlight .s2, .highlight .s {
+  color: #a4c260;
+}
+
+.highlight .sr, .highlight, .mi {
+  color: #a4c260;
+}
+
+/* comment */
+.highlight .c1, .hightligh .c {
+  color:#BC9358;
+  font-style: italic;
+}
+
+
+/*--- html ---*/
+
+/*html tags*/
+.highlight .nt, .highlight .na{
+  color: #e7be69;
+}
+
+/*--- javascript ---*/
+
+.highlight .kd {
+  color: #cb7832;
+}
