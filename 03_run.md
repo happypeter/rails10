@@ -5,6 +5,13 @@ title: 运行第一个 rails 程序
 
 这一集的任务是跑一个 rails 的 hello world 。
 
+### 共享文件夹
+
+![](http://media.happycasts.net/pic/rails10/shared_folder.png)
+
+Mac 机器是我写代码的平台，上面配置好的 sublimtText vim 和 git 还有搜狗输入法等等都能直接用。
+虚拟机里的 ubuntu 是程序的运行平台，这样的好处是不用担心在 Mac 上安装很多软件，把系统搞坏。同时真正部署到服务器上，Rails 一般都是运行在 Linux 系统之上的，本地开发环境，和未来的部署环境一样，方便多多。
+
 ### 新建项目
 
 新建一个项目，使用 mysql 作为数据库
@@ -37,7 +44,7 @@ config.vm.network :private_network, ip: "192.168.10.10"
 
 访问 meetup.dev:3000 可以看到真正运行的程序了。
 
-### public 中可以放静态页面
+
 
 到 public/ 目录中看一下，已经创建了几个静态页面，是可以直接访问的，浏览器中访问 meetup.dev:3000/404.html 就可以打开这里的 404.html 这个页面了。
 
