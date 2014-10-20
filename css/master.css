@@ -172,8 +172,12 @@ div.related {
 }
 
 
-
-a img { border: 0; }
+.content img {
+  display: block;
+  margin: 25px auto;
+  max-width: 620px;
+  border: 0;
+}
 
 div.slide {
   text-align: center;
