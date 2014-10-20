@@ -42,23 +42,26 @@ title: 安装 rails
 
 ### 安装 rails
 
+有了 ruby 语言，系统上就会多出一个命令叫 gem 可以用来安装 ruby 的程序包，首先执行
+
+    echo "gem: --no-ri --no-rdoc" > ~/.gemrc
+
+这样可以让装包过程变得快一点。
+
 ![](http://media.happycasts.net/pic/rails10/rails.jpeg)
 
 为了让你可以跟着我一起做，所以咱俩都把版本控制在 4.1.2 吧，经管我的代码应该是用 rails 4.0 只上的版本都可以跑起来
 
     gem install rails -v 4.1.2
+    rbenv rehash # 导出 gem 中提供的系统命令
+
+<!-- bundler 会一并被装上 -->
 
 完事后，查看一下 rails 版本
 
     rails -v
 
 如果显示 4.1.2 那就一切就绪了。
-
-安装一个 gem ，叫 bundler
-
-    echo "gem: --no-ri --no-rdoc" > ~/.gemrc
-    gem install bundler
-    rbenv rehash
 
 安装 MySQL 数据库
 
