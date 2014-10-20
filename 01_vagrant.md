@@ -3,7 +3,7 @@ layout: default
 title: 使用 vagrant 安装 ubuntu 系统
 ---
 
-我使用的是苹果笔记本，跑 Mac 系统，但是我的 rails 程序要泡在 ubuntu 系统上。那最简单的解决方案就是安装 virtualbox 虚拟机，在装上 vagrant 。 这样就可以找一个 ubuntu 的 vagrant 镜像，很容易的把 ubuntu 装上了。当然如果你已经习惯了用其他的方式安装 ubuntu 也是可以的。
+我使用的是苹果笔记本，跑 Mac 系统，但是我的 rails 程序要跑在 ubuntu 系统上。那最简单的解决方案就是安装 virtualbox 虚拟机，载装上 vagrant 。 这样就很容易的把 ubuntu 装上了。当然如果你已经习惯了用其他的方式安装 ubuntu 也是可以的。
 
 ### 安装 virtualbox 和 vagrant
 
@@ -30,7 +30,7 @@ title: 使用 vagrant 安装 ubuntu 系统
 
     vagrant up
 
-安装过程就开始了。
+安装过程就开始了，一般首次运行需要十几分钟时间。
 
 ### 基本操作
 
@@ -46,6 +46,13 @@ vagrant up 之后，系统就装好并启动起来了，可以运行
 
 来关闭这个 ubuntu 系统。
 
-我在系统上得到的是一个新建的 virtualbox 虚拟机。可以打开 virtualbox ，到 settings 中来给这个虚拟机条调一下内存大小。调到 2048 。
+我在系统上得到的是一个新建的 virtualbox 虚拟机。可以打开 virtualbox ，到 settings 中来给这个虚拟机条调一下内存大小。调到 2048 。添加下面几行到 Vagrantfile 文件
+
+{% highlight ruby%}
+config.vm.provider "virtualbox" do |v|
+  v.memory = 2048
+end
+{% endhighlight %}
+
 
 <!-- https://laracasts.com/search?q=vagrant -->
