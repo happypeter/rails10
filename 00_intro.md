@@ -29,6 +29,5 @@ Jeffery: laravel can be appealing to both new comers and seasoned developers
 <!-- 先用静态页面实现一个小东西，然后用 helper layout 这些概念来优化代码 -->
 <!-- 先写 html 的 form 然后再用 form_for -->
 
-![](http://media.happycasts.net/pic/rails10/vagrant.png)
 
 
