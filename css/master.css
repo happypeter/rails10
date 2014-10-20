@@ -83,20 +83,6 @@ li {
     font-size: 14px;
   }
 
-  .social {
-    margin: 0;
-    padding: 20px 0 0 0;
-    text-align: right;
-  }
-  .social li {
-    display: inline;
-    font-size: 20px;
-    padding: 0 10px;
-  }
-  .social li a {
-    color: rgba(0,0,0,.6);
-  }
-
 .container {
   width: 900px;
   margin: 0 auto;
