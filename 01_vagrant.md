@@ -38,7 +38,7 @@ vagrant up 之后，系统就装好并启动起来了，可以运行
 
     vagrant ssh
 
-登陆到虚拟机里面，默认的用户叫做 vagrant，可以用 whoami 查看一下。
+登陆到虚拟机里面，默认的用户叫做 vagrant，可以用 `whoami` 查看一下。
 
 比如可以敲
 
