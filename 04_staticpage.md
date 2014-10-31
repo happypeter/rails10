@@ -11,6 +11,8 @@ title: 静态页面
      - 也不一定非要再后面一集里面就把所有的巧妙机制都展示了，可以分几个视频逐步抽出，不足的素材部分也可以逐步添加进来的
  -->
 
+ 这个必须用上实时刷新机制。让观众起码看看这样是有可能的。安装一下 sublime 插件吧。
+
 rails 是用来做 web 应用的，功能多，使用的技术手段也多。在真正着手学习 rails 之前，建议你可以多多动手做一些静态网页，也就是多写写三种代码 html css 和 javascript ，这三种语言会了再来接触 rails 程序，会发现其中一部分知识你已经清楚了，就不会因为一下子暴露在太多知识点之下而感到恐怖了。rails10 这套课程里面不会专门去讲解这三种语言的基本使用。但是这一集，咱们先来写成一个静态网页，把首页搭起来。后续课程里会聊如何用 rails 的各种机制来重新拆分组织这些静态代码。我这里是假定你有一定的 html 基础的，不过如果你没有，也没有关系，也同样可以理解课程中的最核心内容。
 
 首先用 sublime 打开 public/index.html 也个文件，删除原有内容。我这里配置了快捷键，所以敲
@@ -89,3 +91,14 @@ header 和 footer，页面的头和脚都有了，下面主题部分也稍微添
 - js
   - 可以分开 js 文件
   - 最后用 sprocket 合并成一个
+
+{% highlight diff %}
+ end
+
+   def latest
+-    @episodes = Episode.recent.page(1).per_page(6)
++    @episodes = Episode.recent.page(params[:page]).per_page(12)
+   end
+
+   def tags
+{% endhighlight %}

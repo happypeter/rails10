@@ -1,0 +1,38 @@
+
+
+code {
+  font-size: 25px;
+  padding: 3px 5px;
+}
+pre code {
+  display: block;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  background: #000;
+}
+
+.highlight pre code.language-diff {
+  background: white;
+  color: #000;
+}
+
+/* github style diff color gi*/
+.highlight .language-diff{
+  line-height: 27px;
+  /* 27 = 7x2 + 13 */
+  font-size: 15px;
+}
+
+.highlight .language-diff .gi {
+  background: #EAFFEA;
+  padding: 7px 0;
+  /* github green */
+}
+
+
+.highlight .language-diff .gd {
+  background-color: #ffecec;
+  padding: 7px 0;
+  /* github diff red */
+}
