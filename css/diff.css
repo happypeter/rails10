@@ -12,8 +12,8 @@ pre code {
   margin-top: 20px;
   margin-bottom: 20px;
   border: 1px solid #888;
-  color: #E6E0DB;
   font-size: 13px;
+  background: #232323;
   color: white;
 }
 code {
@@ -26,7 +26,6 @@ code {
 .highlight pre code.language-diff {
   background: white;
   border: 1px solid teal;
-  color: #000;
 }
 
 /* github style diff color gi*/
