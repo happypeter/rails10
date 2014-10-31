@@ -1,3 +1,36 @@
+
+/* code */
+
+pre {
+  overflow: auto;
+  display: block;
+  font-family: Monaco,Consolas,"Lucida Console",monospace;
+  background-color: #333;
+  border: 0;
+  color: #e9e4e5;
+  line-height: 1.9em;
+  border-radius: 5px;
+  background-clip: padding-box;
+  padding: 20px!important;
+  white-space: pre;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #888;
+}
+
+pre code {
+  font-weight: lighter;
+  padding: 0;
+  font-size: 13px;
+  background: none;
+  color: white;
+}
+code {
+  font-size: 15px;
+  padding: 3px 5px;
+  background: #eee;
+  color: teal;
+}
 .highlight {
   margin: 10px 0;
 }

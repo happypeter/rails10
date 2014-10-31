@@ -2,10 +2,8 @@
 .highlight .language-diff{
   line-height: 27px;
   /* 27 = 7x2 + 13 */
-
   font-size: 13px;
 }
-
 
 .highlight .language-diff .gi {
   background: #EAFFEA;
