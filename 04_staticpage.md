@@ -100,9 +100,9 @@ header 和 footer，页面的头和脚都有了，下面主题部分也稍微添
 {% endhighlight %}
 
 {% highlight diff %}
-  nice
+nice
 - minus this
 +   add this
 - minus tat
-  tile
+tile
 {% endhighlight %}
