@@ -25,6 +25,7 @@ code {
 
 .highlight pre code.language-diff {
   background: white;
+  color: black;
   border: 1px solid teal;
 }
 
