@@ -1,20 +1,39 @@
+/* code */
 
-code {
-  font-size: 25px;
-  padding: 3px 5px;
-}
 pre code {
+  overflow: auto;
   display: block;
-  color: white;
-  padding: 10px;
+  font-family: Monaco,Consolas,"Lucida Console",monospace;
+  background-color: #333;
+  border: 0;
+  color: #e9e4e5;
+  line-height: 1.9em;
   border-radius: 5px;
-  background: #000;
-  border: 2px solid #ddd;
+  background-clip: padding-box;
+  padding: 20px!important;
+  white-space: pre;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #888;
 }
+
+pre code {
+  font-size: 13px;
+  background: none;
+  color: white;
+}
+code {
+  font-size: 14px;
+  padding: 3px 5px;
+  background: #eee;
+  color: teal;
+}
+
 
 .highlight pre code.language-diff {
   background: white;
   color: #000;
+  border: 1px solid teal;
 }
 
 /* github style diff color gi*/
