@@ -21,16 +21,18 @@ rails 是用来做 web 应用的，功能多，使用的技术手段也多。在
 
 然后跟上一个 tab ，就可以补齐成一个基本的 html5 页面了。
 
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <title>Document</title>
-    </head>
-    <body>
+{% highlight html%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
 
-    </body>
-    </html>
+</body>
+</html>
+{% endhighlight %}
 
 `<title>` 标签中填入 `meetup` 敲 tab 跳转进 `<body>` 标签。
 
@@ -39,8 +41,12 @@ rails 是用来做 web 应用的，功能多，使用的技术手段也多。在
 
 header 和 footer，页面的头和脚都有了，下面主题部分也稍微添加一点内容。到 laracasts.com 借用一下它的这张大背景图。这里要声明一下，课程中得页面样式是完全借用 laracasts.com 的，因为我非常喜欢这个站点，模仿是最好的表达崇敬的方式了。
 
+{% highlight diff %}
+  <body>
++    <img src="images/home-banner-bg.jpg" alt="home-banner">
+  </body>
+{% endhighlight %}
 
-    <img src="images/home-banner-bg.jpg" alt="home-banner">
 
 
 但是这样的背景图是随着页面的缩放会变得很那看的。所以这里引入一个 js 的插件 [Anystrech](https://github.com/danmillar/jquery-anystretch)
