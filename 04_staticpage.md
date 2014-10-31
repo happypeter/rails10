@@ -37,14 +37,12 @@ rails 是用来做 web 应用的，功能多，使用的技术手段也多。在
 `<title>` 标签中填入 `meetup` 敲 tab 跳转进 `<body>` 标签。
 
 
-
-
 header 和 footer，页面的头和脚都有了，下面主题部分也稍微添加一点内容。到 laracasts.com 借用一下它的这张大背景图。这里要声明一下，课程中得页面样式是完全借用 laracasts.com 的，因为我非常喜欢这个站点，模仿是最好的表达崇敬的方式了。
 
 {% highlight diff %}
-  <body>
-+    <img src="images/home-banner-bg.jpg" alt="home-banner">
-  </body>
+<body>
++ <img src="images/home-banner-bg.jpg" alt="home-banner">
+</body>
 {% endhighlight %}
 
 
