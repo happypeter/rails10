@@ -4,9 +4,7 @@ pre code {
   overflow: auto;
   display: block;
   font-family: Monaco,Consolas,"Lucida Console",monospace;
-  background-color: #333;
   border: 0;
-  color: #e9e4e5;
   line-height: 1.9em;
   border-radius: 5px;
   background-clip: padding-box;
@@ -15,6 +13,8 @@ pre code {
   margin-top: 20px;
   margin-bottom: 20px;
   border: 1px solid #888;
+  background: #232323;
+  color: #E6E0DB;
 }
 
 pre code {

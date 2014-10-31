@@ -8,14 +8,6 @@
   color: #d0cffe;
 }
 
-pre {
-  background: #232323;
-  color: #E6E0DB;
-}
-.highlight pre code{
-  background: none;
-}
-
 .highlight .k {
   color: #cb7832;
 }
