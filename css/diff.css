@@ -23,19 +23,13 @@ code {
   color: teal;
 }
 
-
 .highlight pre code.language-diff {
   background: white;
-  color: #000;
   border: 1px solid teal;
+  color: #000;
 }
 
 /* github style diff color gi*/
-.highlight .language-diff{
-  line-height: 27px;
-  /* 27 = 7x2 + 13 */
-  font-size: 15px;
-}
 
 .highlight .language-diff .gi {
   background: #EAFFEA;
