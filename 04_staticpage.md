@@ -93,12 +93,16 @@ header 和 footer，页面的头和脚都有了，下面主题部分也稍微添
   - 最后用 sprocket 合并成一个
 
 {% highlight diff %}
- end
-
    def latest
 -    @episodes = Episode.recent.page(1).per_page(6)
 +    @episodes = Episode.recent.page(params[:page]).per_page(12)
    end
+{% endhighlight %}
 
-   def tags
+{% highlight diff %}
+  nice
+- minus this
++   add this
+- minus tat
+  tile
 {% endhighlight %}
