@@ -1,0 +1,407 @@
+/*
+font-family:'Avenir Next W01 Thin';
+font-family:'AvenirNextW01-ThinItali';
+font-family:'AvenirNextLTW01-Regular';
+font-family:'AvenirNextLTW01-Italic';
+font-family:'Avenir Next LT W01 Bold';
+font-family:'AvenirNextLTW01-BoldIta';
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'AvenirNextLTW01-Regular', Helvetica, sans-serif;
+}
+
+a {
+  color: #307EA9;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+b, strong {
+  color: #555;
+}
+
+li {
+  padding: 0;
+  list-style-type: square;
+  font-size: 20px;
+  margin-left: 0;
+  line-height: 160%;
+}
+
+::selection {
+  background-color: #2B2B2B;
+  color: #eee;
+}
+
+.clear {
+  clear: both;
+}
+
+.header {
+  margin: 75px 0 25px 0;
+}
+  .header a, .header b {
+    color: #444;
+    text-decoration: none;
+    transition: color 0.25s ease-in;
+    -webkit-transition: color 0.25s ease-in;
+  }
+  .header a:hover, .header a:hover b {
+    color: #307EA9;
+  }
+
+  .name a {
+    font-size: 30px;
+    font-family: 'Avenir Next W01 Thin';
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+  .name b {
+    font-family: 'Avenir Next LT W01 Bold';
+    font-weight: normal;
+  }
+
+  .menu {
+    padding: 0;
+    margin: 0;
+    font-family: 'Avenir Next LT W01 Bold';
+    text-transform: uppercase;
+    float: right;
+  }
+  .menu li {
+    display: inline;
+    padding-left: 15px;
+  }
+  .menu li a{
+    font-size: 14px;
+  }
+
+  .social {
+    margin: 0;
+    padding: 20px 0 0 0;
+    text-align: right;
+  }
+  .social li {
+    display: inline;
+    font-size: 20px;
+    padding: 0 10px;
+  }
+  .social li a {
+    color: rgba(0,0,0,.6);
+  }
+
+.container {
+  width: 650px;
+  margin: 0 auto;
+}
+
+.hero {
+  background-color: #2B2B2B;
+  background-size: cover;
+  height: 200px;
+  box-shadow: inset 0 0 15px rgba(0,0,0,.5);
+}
+
+.aside {
+  margin-bottom: 25px;
+  background-color: #eee;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.title {
+  padding: 10px 10px 10px 23px;
+  border-left: 7px solid #eee;
+  margin: 40px -30px 30px -30px;
+}
+
+h1 {
+  margin: 0;
+  font-family: 'Avenir Next LT W01 Bold';
+  font-weight: bold;
+  font-size: 34px;
+  font-weight: 400;
+  color: #444;
+}
+  h1 em, h1 i {
+    font-family: 'AvenirNextLTW01-BoldIta' !important;
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  h2 {
+    margin: 50px -30px 20px -30px;
+    padding: 10px 30px 10px 25px;
+    border-left: 5px solid #eee;
+    font-family: 'Avenir Next LT W01 Bold';
+    font-weight: bold;
+    font-size: 24px;
+    color: #444;
+  }
+    h2 em, h2 i {
+      font-family: 'AvenirNextLTW01-BoldIta' !important;
+      font-weight: normal;
+      font-style: normal;
+    }
+
+  h3 {
+    margin: 50px -30px 20px -27px;
+    padding: 15px 30px;
+    font-family: 'Avenir Next LT W01 Bold';
+    font-weight: bold;
+    border-left: 3px solid #eee;
+    font-size: 20px;
+    font-weight: 400;
+    color: #444;
+  }
+
+.content {
+
+}
+  .content i, .content em {
+    font-family: 'AvenirNextLTW01-Italic';
+    font-style: normal;
+  }
+  .content b, .content strong {
+    font-family: 'Avenir Next LT W01 Bold';
+    font-weight: normal;
+  }
+  .content em b {
+    font-family: 'AvenirNextLTW01-BoldIta';
+    font-weight: normal;
+    font-style: normal;
+  }
+  .content p {
+    font-size: 20px;
+    line-height: 160%;
+    margin: 25px 0;
+  }
+  .content img:not(.emoji), .content video {
+    margin: 10px -60px;
+    max-width: 770px;
+    border-radius: 4px;
+  }
+  .content li {
+    margin-bottom: 20px;
+  }
+  .content li img {
+    margin: 15px 0 !important;
+    width: 100%;
+  }
+  .content pre {
+    padding: 10px 20px;
+    margin: 0 50px;
+    background-color: #fbfbfb;
+    border-radius: 5px;
+  }
+  .content p code {
+    color: #444;
+    background-color: #e2edf3;
+    border-radius: 3px;
+    font-size: 16px;
+    padding: 2px 3px;
+  }
+  .content .when + p:first-of-type {
+    display: inline;
+  }
+
+  .content blockquote {
+    background-color: #eee;
+    margin: 0 -75px;
+    padding: 5px 15px;
+    border-radius: 4px;
+  }
+  .content blockquote p {
+    color: #000;
+    padding: 0 25px;
+    font-size: 26px;
+  }
+  .content blockquote cite {
+    display: block;
+    text-align: right;
+    font-size: 18px;
+  }
+
+  /* ugly hack to full-width tweets on non-mobile */
+  @media not screen and (max-device-width: 480px) {
+    .content .twitter-tweet {
+      width: 100%;
+    }
+  }
+
+  .when {
+    padding-top: 5px;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #999;
+  }
+  .content hr{
+    border: 0;
+    height: 6px;
+    background-image: url('/images/hr.png');
+    background-repeat: repeat-x;
+    margin: 2em 3em;
+  }
+  .content .tweet {
+    border-top: 1px solid #eee;
+    margin-top: 75px;
+    padding-top: 15px;
+    text-align: right;
+  }
+  .content .tweet span {
+    float: left;
+    font-size: 13px;
+    color: #999;
+    padding-top: 2px;
+    margin-left: 15px;
+  }
+  .colophon {
+    margin: 75px -30px -45px -30px;
+    text-align: center;
+  }
+    .colophon .color, .colophon .typeface {
+      width: 100px;
+      display: inline-block;
+      margin: 5px;
+      font-size: 12px;
+      box-shadow: 0 0 3px #ccc;
+      border-radius: 3px;
+    }
+    .colophon .typeface b {
+      background-color: #fbfbfb;
+      display: block;
+      width: 100px;
+      height: 19px;
+      text-transform: uppercase;
+      border-bottom: 1px solid #eee;
+      color: #ccc;
+    }
+    .clear {
+      height: 50px;
+    }
+
+.listing {
+  margin: 25px 0;
+  padding: 0;
+}
+  .listing li {
+    list-style-type: none;
+    margin-bottom: 0;
+    padding: 7px 5px;
+    font-size: 18px;
+  }
+  a {
+    text-decoration: none;
+  }
+  .listing span {
+    padding-top: 2px;
+    float: right;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #999;
+  }
+.footer {
+  margin-top: 150px;
+  background-size: cover;
+  box-shadow: inset 0 0 15px rgba(0,0,0,.5);
+  padding: 25px;
+}
+  .twitter-follow {
+    color: rgba(0,0,0,.8);
+    font-family: 'Avenir Next LT W01 Bold';
+    font-weight: normal;
+    font-size: 14px;
+    float: left;
+    margin-top: 16px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 3px 7px;
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+  }
+    .twitter-follow:hover {
+      box-shadow: 0 0 10px rgba(0,0,0,.5);
+      transition: all 0.15s ease-in;
+      -webkit-transition: all 0.15s ease-in;
+    }
+  .meta {
+    float: right;
+  }
+  .meta a {
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.15s ease-in;
+    -webkit-transition: all 0.15s ease-in;
+  }
+  .meta a:hover {
+    text-shadow: 0 0 15px #000;
+  }
+  .meta .block {
+    margin-top: 10px;
+    display: inline-block;
+    padding-right: 10px;
+  }
+.about-wrapper {
+  background-color: #000;
+  background-image: url('/images/holman-lolgreyscale.jpg');
+  background-size: cover;
+  background-position: 50%;
+  height: 100vh;
+  max-height: 100%;
+  width: 100%;
+  text-shadow: 0 0 10px rgba(0,0,0,.8);
+  color: #fff;
+}
+  .about-wrapper .title {
+    padding: 45vh 0 0 13vw;
+    margin: 0;
+    border: 0;
+  }
+  .about-wrapper .title h1 {
+    margin-bottom: 15px;
+    color: #fff;
+  }
+  .about-wrapper a {
+    color: #fff;
+  }
+  .about-wrapper a:hover {
+    color: #ccc;
+  }
+  .about-wrapper .read-more {
+    position: absolute;
+    bottom: 10px;
+    left: 35%;
+    width: 30%;
+    text-align: center;
+    background-color: rgba(0,0,0,.4);
+    padding: 10px;
+    font-size: 14px;
+  }
+  .about-wrapper .read-more:before {
+    content: 'â–¼';
+    margin-top: 3px;
+    font-size: 10px;
+    float: left;
+  }
+.about-other {
+  margin-top: -50px;
+  padding: 5% 20%;
+}
+  .about-other p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .about-avatar img {
+    padding: 7px 10px 10px 0;
+    width: 110px;
+  }
+.about-other .back-to-blog {
+  margin-top: 50px;
+  font-size: 14px;
+  text-align: center;
+}

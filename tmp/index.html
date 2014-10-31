@@ -7,22 +7,11 @@
   </code>
 </pre>
 
-<div class="highlight">
-  <pre>
-    <code class="language-diff">
+<div class="highlight"><pre><code class="language-diff" data-lang="diff">end
 
+   def latest
+<span class="gd">-    @episodes = Episode.recent.page(1).per_page(6)</span>
+<span class="gi">+    @episodes = Episode.recent.page(params[:page]).per_page(12)</span>
+   end
 
-<span class="gu">@@ -5,6 +5,7 @@</span>
-   &lt;title&gt;Document&lt;/title&gt;
-   &lt;link rel=&quot;stylesheet&quot; href=&quot;css/layout.css&quot;&gt;
-   &lt;link rel=&quot;stylesheet&quot; href=&quot;css/common.css&quot;&gt;
-<span class="gi">+  &lt;script src=&quot;js/vendor/jquery.anystretch.min.js&quot;&gt;&lt;/script&gt;</span>
- &lt;/head&gt;
- &lt;body&gt;
-   &lt;div class=&quot;navbar clearfix&quot;&gt;
-
-
-
-    </code>
-  </pre>
-</div>
+   def tags</code></pre></div>
