@@ -11,7 +11,7 @@ title: 静态页面
      - 也不一定非要再后面一集里面就把所有的巧妙机制都展示了，可以分几个视频逐步抽出，不足的素材部分也可以逐步添加进来的
  -->
 
- 这个必须用上实时刷新机制。让观众起码看看这样是有可能的。安装一下 sublime 插件吧。
+<!-- 这个必须用上实时刷新机制。让观众起码看看这样是有可能的。安装一下 sublime 插件吧。 -->
 
 rails 是用来做 web 应用的，功能多，使用的技术手段也多。在真正着手学习 rails 之前，建议你可以多多动手做一些静态网页，也就是多写写三种代码 html css 和 javascript ，这三种语言会了再来接触 rails 程序，会发现其中一部分知识你已经清楚了，就不会因为一下子暴露在太多知识点之下而感到恐怖了。rails10 这套课程里面不会专门去讲解这三种语言的基本使用。但是这一集，咱们先来写成一个静态网页，把首页搭起来。后续课程里会聊如何用 rails 的各种机制来重新拆分组织这些静态代码。我这里是假定你有一定的 html 基础的，不过如果你没有，也没有关系，也同样可以理解课程中的最核心内容。
 
@@ -34,7 +34,20 @@ rails 是用来做 web 应用的，功能多，使用的技术手段也多。在
 </html>
 {% endhighlight %}
 
+
 `<title>` 标签中填入 `meetup` 敲 tab 跳转进 `<body>` 标签。
+
+现在一个问题是如何在浏览器中打开 sublime 中，我正在编辑的这个 html 。可以到 tools -> build system -> new build system 创建一个文件
+
+{% highlight javascript %}
+{
+    "cmd": ["/Applications/Google Chrome.app/Contents/MacOS/Google Chrome", "$file"],
+    "selector": "source.html"
+}
+{% endhighlight %}
+
+保存，文件名为 browse.sublime-build 。这样回到 index.html ，敲 Cmd-B 就可以在浏览器中打开这个文件了。
+
 
 
 header 和 footer，页面的头和脚都有了，下面主题部分也稍微添加一点内容。到 laracasts.com 借用一下它的这张大背景图。这里要声明一下，课程中得页面样式是完全借用 laracasts.com 的，因为我非常喜欢这个站点，模仿是最好的表达崇敬的方式了。
