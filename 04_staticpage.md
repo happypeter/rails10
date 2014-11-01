@@ -188,7 +188,7 @@ a {
 {% endhighlight %}
 
 ### 使用 anystretch 添加背景图
-header 和 footer，页面的头和脚都有了，下面主题部分也稍微添加一点内容。到 laracasts.com 借用一下它的这张大背景图。这里要声明一下，课程中得页面样式是完全借用 laracasts.com 的，因为我非常喜欢这个站点，模仿是最好的表达崇敬的方式了。
+header 和 footer，页面的头和脚都有了，下面主题部分也稍微添加一点内容。到 laracasts.com 借用一下它的这张大背景图。这里要声明一下，课程中的页面样式是完全借用 laracasts.com 的，因为我非常喜欢这个站点，模仿是最好的表达崇敬的方式了。
 
 把大图放到 images 目录下，然后到 index.html 中添加对它的使用：
 
@@ -200,7 +200,7 @@ header 和 footer，页面的头和脚都有了，下面主题部分也稍微添
 
 但是这样的背景图是随着页面的缩放会变得很那看的。所以这里引入一个 js 的插件 [Anystrech](https://github.com/danmillar/jquery-anystretch)
 
-创建 public/js/vendor 目录，把压缩过的文件放进去
+创建 public/js/ 目录，把压缩过的文件放进去
 
     wget https://raw.githubusercontent.com/danmillar/jquery-anystretch/master/jquery.anystretch.min.js
 
@@ -210,7 +210,7 @@ header 和 footer，页面的头和脚都有了，下面主题部分也稍微添
    <link rel="stylesheet" href="css/common.css">
 +  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 +  <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-+  <script src="js/vendor/jquery.anystretch.min.js"></script>
++  <script src="js/jquery.anystretch.min.js"></script>
  </head>
 {% endhighlight %}
 
@@ -252,7 +252,7 @@ header 和 footer，页面的头和脚都有了，下面主题部分也稍微添
 
 而 about 页面的 navbar 依然是黑的。
 
-好了，这一集就写到这里，其实也是有点写不下去了，因为内容已经变得臃肿，各个页面间也有了重复的内容。这样继续写下去，肯定会麻烦不断。 后面，我会用 rails 的各种巧妙机制来解决这里动手遇到的这些麻烦。
+好了，这一集就写到这里，其实也是有点写不下去了，因为内容已经变得臃肿，各个页面间也有了重复的内容。这样继续写下去，肯定会麻烦不断。
 
 <!--
 - 下面的内容是后续视频的注意事项：
