@@ -152,6 +152,42 @@ ul {
 {% endhighlight %}
 
 
+到页面中发现美中不足的是连接是有下划线的，为了修正这个问题，到 common.css 之中，添加
+
+{% highlight css %}
+a {
+  text-decoration: none;
+  color: #c0865e;
+  &:hover {
+    color: #845534;
+  }
+}
+{% endhighlight %}
+
+
+这样 header 部分就有了，现在如法炮制，来添加 footer 。index.html 中添加
+
+{% highlight html %}
+<div class="footer">
+  <div class="container">
+    footer
+  </div>
+</div>
+{% endhighlight %}
+
+再来到 index.css
+
+{% highlight css %}
+.footer {
+  border-top: 1px solid #c5c5c5;
+  min-height: 200px;
+  margin: 3em 0;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  background: #f8f5f0;
+}
+{% endhighlight %}
+
 header 和 footer，页面的头和脚都有了，下面主题部分也稍微添加一点内容。到 laracasts.com 借用一下它的这张大背景图。这里要声明一下，课程中得页面样式是完全借用 laracasts.com 的，因为我非常喜欢这个站点，模仿是最好的表达崇敬的方式了。
 
 {% highlight diff %}
