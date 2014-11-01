@@ -3,15 +3,9 @@ layout: default
 title: 静态页面
 ---
 
-<!-- 一个硬要求，静态页面涉及的代码要在这一页文档上可以贴得下，步骤也不能太多，太多了大家就疲劳了
-     - 这个简单，可以先不用 font-awesome 了
-     - 要抽出 laoyout 概念，可以要 header 不要 footer，header 也不用写的很全
-       - 但是还是要写多于一个页面，可以写个 about 页面。
-
+<!--
      - 也不一定非要再后面一集里面就把所有的巧妙机制都展示了，可以分几个视频逐步抽出，不足的素材部分也可以逐步添加进来的
  -->
-
-<!-- 这个必须用上实时刷新机制。让观众起码看看这样是有可能的。安装一下 sublime 插件吧。 -->
 
 rails 是用来做 web 应用的，功能多，使用的技术手段也多。在真正着手学习 rails 之前，建议你可以多多动手做一些静态网页，也就是多写写三种代码 html css 和 javascript ，然后再来接触 rails 程序，会发现其中一部分知识你已经清楚了，就不会因为一下子暴露在太多知识点之下而感到恐怖了。这一集，咱们先来写成一个静态网页，把首页搭起来。后续课程里会聊如何用 rails 的各种机制来重新拆分组织这些静态代码。我这里是假定你有一定的 html 基础的，不过如果你没有，也没有关系，也同样可以理解课程中的最核心内容。
 
@@ -47,6 +41,44 @@ rails 是用来做 web 应用的，功能多，使用的技术手段也多。在
 
 保存，文件名为 browse.sublime-build 。这样回到 index.html ，敲 Cmd-B 就可以在浏览器中打开这个文件了。
 
+来到 head 之中，添加对 css/common.css 的引用
+
+{% highlight html %}
+<link rel="stylesheet" href="css/common.css">
+{% endhighlight %}
+
+再来创建 css/common.css 文件
+
+{% highlight css %}
+body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+{% endhighlight %}
 
 header 和 footer，页面的头和脚都有了，下面主题部分也稍微添加一点内容。到 laracasts.com 借用一下它的这张大背景图。这里要声明一下，课程中得页面样式是完全借用 laracasts.com 的，因为我非常喜欢这个站点，模仿是最好的表达崇敬的方式了。
 
@@ -57,6 +89,8 @@ header 和 footer，页面的头和脚都有了，下面主题部分也稍微添
 {% endhighlight %}
 
 
+
+我这里安装了一个插件叫做 livestyle ，这样每次我在 sublime 中修改 css 文件，浏览器中就可以直接看到效果了。
 
 但是这样的背景图是随着页面的缩放会变得很那看的。所以这里引入一个 js 的插件 [Anystrech](https://github.com/danmillar/jquery-anystretch)
 
