@@ -87,6 +87,71 @@ ul {
 }
 {% endhighlight %}
 
+在 index.html 中添加页首导航栏
+
+{% highlight html %}
+<div class="navbar clearfix">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      Meetup
+    </a>
+    <ul class="nav left">
+      <li><a href="/#about">About</a></li>
+      <li><a href="#">placeholder</a></li>
+    </ul>
+    <ul class="nav right">
+      <li><a href="#">login</a></li>
+      <li><a href="#">signup</a></li>
+    </ul>
+  </div>
+</div>
+{% endhighlight %}
+
+再到 index.css 之中，添加相应的样式：
+
+{% highlight css %}
+.navbar {
+  background: #222;
+  position: relative;
+  z-index: 1000;
+}
+.navbar a {
+  color: #fff;
+}
+.navbar a:hover {
+  color: #c0865e;
+}
+.navbar-brand {
+  float: left;
+  padding-left: 0;
+  line-height: 80px;
+  font-size: 40px;
+}
+.nav.left {
+  float: left;
+  margin-left: 40px;
+  font-size: 15px;
+}
+.nav.right {
+  float: right;
+}
+.nav  li {
+  float: left;
+}
+.nav  li  a {
+  display: block;
+  font-size: 1.1em;
+  line-height: 40px;
+  padding: 5px 10px;
+  margin: 15px 10px;
+}
+.nav  li  a:hover {
+  color: #000;
+  background: #fff;
+}
+{% endhighlight %}
+
+
 header 和 footer，页面的头和脚都有了，下面主题部分也稍微添加一点内容。到 laracasts.com 借用一下它的这张大背景图。这里要声明一下，课程中得页面样式是完全借用 laracasts.com 的，因为我非常喜欢这个站点，模仿是最好的表达崇敬的方式了。
 
 {% highlight diff %}
