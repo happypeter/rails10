@@ -242,17 +242,20 @@ header 和 footer，页面的头和脚都有了，下面主题部分也稍微添
 {% endhighlight %}
 
 
-`<body>` 标签，改为 `<body class="welome">` 这样让这个 header 变成透明色。
+`<body>` 标签，改为 `<body class="index">` 这样让这个 header 变成透明色。
 
-现在在来添加一个 about.html 页面。这个就需要拷贝整个的这个页面过来才行。
+{% highlight css %}
+.index .navbar {
+  background: transparent;
+}
+{% endhighlight %}
 
+而 about 页面的 navbar 依然是黑的。
 
+好了，这一集就写到这里，其实也是有点写不下去了，因为内容已经变得臃肿，各个页面间也有了重复的内容。这样继续写下去，肯定会麻烦不断。 后面，我会用 rails 的各种巧妙机制来解决这里动手遇到的这些麻烦。
 
-后面，我会用 rails 的各种巧妙机制来解决这里动手遇到的这些麻烦。
-
----
-
-
+<!--
+- 下面的内容是后续视频的注意事项：
 这一集的内容不要太多，最重要的是为后面的“使用 rails 巧妙重构静态页面”的部分做素材准备。
 
 - asset pipeline 的各种机制
@@ -270,18 +273,4 @@ header 和 footer，页面的头和脚都有了，下面主题部分也稍微添
 - js
   - 可以分开 js 文件
   - 最后用 sprocket 合并成一个
-
-{% highlight diff %}
-def rest
--  @episodes = Episode.recent.page(1).per_page(6)
-+  @episodes = Episode.recent.page(params[:page]).per_page(12)
-end
-{% endhighlight %}
-
-{% highlight diff %}
-nice
-- minus this
-+   add this
-- minus tat
-tile
-{% endhighlight %}
+ -->
