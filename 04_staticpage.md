@@ -56,10 +56,12 @@ body {
   font-size: 14px;
   color: #666;
 }
+
 .container {
   width: 1170px;
   margin: 0 auto;
 }
+
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -71,7 +73,6 @@ body {
   content: " ";
   display: table;
 }
-
 .clearfix:after {
   clear: both;
 }
