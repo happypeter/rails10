@@ -190,15 +190,13 @@ a {
 
 header 和 footer，页面的头和脚都有了，下面主题部分也稍微添加一点内容。到 laracasts.com 借用一下它的这张大背景图。这里要声明一下，课程中得页面样式是完全借用 laracasts.com 的，因为我非常喜欢这个站点，模仿是最好的表达崇敬的方式了。
 
+把大图放到 images 目录下，然后到 index.html 中添加对它的使用：
+
 {% highlight diff %}
 <body>
 + <img src="images/home-banner-bg.jpg" alt="home-banner">
 </body>
 {% endhighlight %}
-
-
-
-我这里安装了一个插件叫做 livestyle ，这样每次我在 sublime 中修改 css 文件，浏览器中就可以直接看到效果了。
 
 但是这样的背景图是随着页面的缩放会变得很那看的。所以这里引入一个 js 的插件 [Anystrech](https://github.com/danmillar/jquery-anystretch)
 
@@ -209,14 +207,38 @@ header 和 footer，页面的头和脚都有了，下面主题部分也稍微添
 在 index.html 中添加
 
 {% highlight diff%}
-@@ -5,6 +5,7 @@
-   <title>Document</title>
-   <link rel="stylesheet" href="css/layout.css">
    <link rel="stylesheet" href="css/common.css">
++  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
++  <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 +  <script src="js/vendor/jquery.anystretch.min.js"></script>
  </head>
- <body>
-   <div class="navbar clearfix">
+{% endhighlight %}
+
+在 `</body>` 的上方添加
+
+{% highlight js %}
+<script>
+  $('.home-banner').anystretch();
+</script>
+{% endhighlight %}
+
+最后到 index.css 中去给 div 设置一下高度
+
+{% highlight css %}
+.home-banner {
+  height: 600px;
+}
+{% endhighlight %}
+
+这样，大背景图就设置好了。
+
+
+# 创建 about 页面
+
+需要拷贝整个 index.html 过来，然后 body 部分改为
+
+{% highlight html %}
+<h1>about</h1>
 {% endhighlight %}
 
 
