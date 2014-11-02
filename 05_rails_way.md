@@ -13,7 +13,7 @@ title: The Rails Way
 
 ### The Rails Way
 
-![](http://media.happycasts.net/pic/rail10/rails_way.png)
+![](http://media.happycasts.net/pic/rails10/rails_way.png)
 
 rails 的根本骨架是上面的 MVC 结构，不过这一集只来关注 route -> controller -> view 的这条线。
 
