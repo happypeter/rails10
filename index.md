@@ -61,7 +61,7 @@ title: 目录
       </td>
     </tr>
     <tr class="episode-wrap">
-      <td class="episode-index">4</td>
+      <td class="episode-index">5</td>
       <td class="episode-title">
         <a href="05_rails_way.html">
           The Rails Way
