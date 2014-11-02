@@ -71,5 +71,16 @@ title: 目录
         x min
       </td>
     </tr>
+    <tr class="episode-wrap">
+      <td class="episode-index">6</td>
+      <td class="episode-title">
+        <a href="06_asset_pipeline.html">
+          Asset Pipeline
+        </a>
+      </td>
+      <td class="episode-length">
+        x min
+      </td>
+    </tr>
   </tbody>
 </table>

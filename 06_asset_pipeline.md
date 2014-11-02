@@ -13,9 +13,16 @@ title: Asset Pipleline
 
 什么叫 asset ？ 图片，css 和 js 这些文件就叫做
 
-### erb
+### erb 和 helper
 
 首先要理解什么是 Embedded RuBy，如果你给一个文件，例如 html template 文件但是不局限于这种文件，加上 .html.erb 后缀，这样就可以在里面写 erb 语句了，也就是在 `<%= %>` 中，可以写 ruby 了。例如 `<%= 1+1 %>` 或者 `<%= link_to "google", "google.com" %>`，`link_to` 是 Rails 自带的函数。用于简化 html 代码的书写，类似的自带函数还有很多，都叫做 helper 。
+
+可以对 welcome.html.erb 做下面的修改
+
+{% highlight diff %}
+- <a href="./about.html">About</a>
++ <li><%= link_to "about", "/about" %></li>
+{% endhighlight %}
 
 ### 抽出 layout
 
