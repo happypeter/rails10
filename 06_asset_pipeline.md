@@ -17,31 +17,33 @@ erb 是 Embedded RuBy 的简写，文件加上 .html.erb 后缀，这样就可�
 
 ### 抽出 layout
 
-写程序有一个原则，就是不重复，因为重复的代码，你改动一一个地方，就要有两倍的工作量了。现在 about.html 之中有一大部分内容都是和 welcome.html 中一样的。所以这是个问题，看看 rails 怎么来解决。
+写程序有一个原则，就是不重复，因为重复的代码，你改动一个地方，就要有两倍的工作量了。现在 about.html 之中有一大部分内容都是和 welcome.html 中一样的。所以这是个问题，看看 rails 怎么来解决。
 
-这就涉及到一个概念，叫做 layout 文件。application.html.erb 之中的内容一下子不太好理解，所以先把他们全部删除，一会儿一步一步的我还会把这些内容都写会来。
+这就涉及到一个概念，叫做 layout 文件。到 layouts/application.html.erb 之中,这里的内容一下子不太好理解，所以先把他们全部删除，一会儿一步一步的我还会把这些内容都写会来。
 
-对 application.html.erb 中的 body 标签做下面的操作
+为了区分各个页面，对 application.html.erb 中的 body 标签做下面的操作
 
 {% highlight html %}
 <body class="<%= params[:controller] + '-' + params[:action] %>">
 {% endhighlight %}
-
 
 ### 重新安装 anystretch 的相关文件
 
 Rails 自带了 jquery 所以只要把 anystretch 的 js 添加到它的下面就行。
 
 {% highlight diff %}
-
-  //= require jquery
-  //= require jquery_ujs
-  //= require turbolinks
+//= require jquery
 + //= require vendor/jquery.anystretch.min
-
 {% endhighlight %}
 
-把图片放到 `app/assets/images` 下面，这样在 view 模板中就可以通过 `<%= image_tag "home-banner-bg.jpg" %>` 来使用了。
+把图片放到 `app/assets/images` 下面，这样在 view 模板中就可以通过 `<%= image_url "home-banner-bg.jpg" %>` 来使用了。
+
+{% highlight diff %}
+-  <div class="home-banner" data-stretch="images/home-banner-bg.jpg"></div>
++  <div class="home-banner" data-stretch="<%= image_url "home-banner-bg.jpg" %>"></div>
+{% endhighlight %}
+
+js 文件在页面中的导入也就简单多了，layouts/application.html.erb 之中
 
 {% highlight diff %}
 - <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -50,7 +52,11 @@ Rails 自带了 jquery 所以只要把 anystretch 的 js 添加到它的下面�
 + <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 {% endhighlight %}
 
-css 的处理和 js 很类似。
+css 的处理和 js 很类似。移动文件到 app/assets/stylesheets/ 下之后，在 applicaiton.html.erb 中，就只需要
+
+{% highlight erb %}
+<%= stylesheet_link_tag "application" %>
+{% endhighlight %}
 
 总结一下，对于 css 图片和 js 的控制，涉及到的是 rails asset pipeline，其实内容还不只是我们刚刚介绍的这点，后面还有。
 
