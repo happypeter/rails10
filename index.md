@@ -93,5 +93,16 @@ title: 目录
         x min
       </td>
     </tr>
+    <tr class="episode-wrap">
+      <td class="episode-index">8</td>
+      <td class="episode-title">
+        <a href="08_stupid.html">
+          笨办法发消息
+        </a>
+      </td>
+      <td class="episode-length">
+        x min
+      </td>
+    </tr>
   </tbody>
 </table>
