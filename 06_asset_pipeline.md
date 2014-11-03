@@ -30,8 +30,6 @@ erb 是 Embedded RuBy 的简写，文件加上 .html.erb 后缀，这样就可�
 
 ### 重新安装 anystretch 的相关文件
 
-什么叫 asset ？ 图片，css 和 js 这些文件就叫做
-
 Rails 自带了 jquery 所以只要把 anystretch 的 js 添加到它的下面就行。
 
 {% highlight diff %}
@@ -43,8 +41,6 @@ Rails 自带了 jquery 所以只要把 anystretch 的 js 添加到它的下面�
 
 {% endhighlight %}
 
-
-
 把图片放到 `app/assets/images` 下面，这样在 view 模板中就可以通过 `<%= image_tag "home-banner-bg.jpg" %>` 来使用了。
 
 {% highlight diff %}
@@ -54,6 +50,8 @@ Rails 自带了 jquery 所以只要把 anystretch 的 js 添加到它的下面�
 + <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 {% endhighlight %}
 
-### sass
+css 的处理和 js 很类似。
+
+总结一下，对于 css 图片和 js 的控制，涉及到的是 rails asset pipeline，其实内容还不只是我们刚刚介绍的这点，后面还有。
 
 
