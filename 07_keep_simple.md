@@ -5,7 +5,6 @@ title: Keep it Simple, Let it grow
 
 介绍 sass coffeescript git 这些工具。经管 rails 是用来写带数据库的智能应用程序的，但是还是不着急碰数据库。这一集依旧是看看 Rails 能给前端代码的书写带来哪些好处。
 
-
 ### 重新安排 css 文件结构
 继续开工。随着 html 页面结构的调整，layout 文件的引入，index.css 这个文件名已经变得不适合了。新建一个目录
 
