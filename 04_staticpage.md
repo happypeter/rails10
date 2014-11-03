@@ -254,23 +254,3 @@ header 和 footer，页面的头和脚都有了，下面主题部分也稍微添
 
 好了，这一集就写到这里，其实也是有点写不下去了，因为内容已经变得臃肿，各个页面间也有了重复的内容。这样继续写下去，肯定会麻烦不断。
 
-<!--
-- 下面的内容是后续视频的注意事项：
-这一集的内容不要太多，最重要的是为后面的“使用 rails 巧妙重构静态页面”的部分做素材准备。
-
-- asset pipeline 的各种机制
-  - css to sass -> 所以静态页面例子里面要有 brand-color 被复用到好几个地方的情况
-  - js -> anystrech 的文件可以放到 vendor 下面，同时 jquery 可以删除，因为 rails 默认支持 jquery
-  - 文件要从 public 中移除，放到 views 文件夹里
-  - 同时后缀名改为 .html.erb
-  - 给出 root: => "pages#welcome" 的 route
-
-
-- 图片
-  - 有固定的位置放文件
-- css
-  - 可以用 sass
-- js
-  - 可以分开 js 文件
-  - 最后用 sprocket 合并成一个
- -->
