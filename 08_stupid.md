@@ -25,7 +25,63 @@ title: 笨办法发消息
 </div>
 {% endhighlight %}
 
-对应的 css
+对应的 css 放在 welcome.css 之中
+
+{% highlight sass %}
+.home-banner {
+  margin-top: -80px;
+  padding-top: 80px;
+  .banner-inner {
+    height: 600px;
+    position: relative;
+    h1 {
+      font-family: "museo-sans-condensed";
+      font-size: 88px;
+      font-weight: 400;
+      letter-spacing: -2px;
+      border-radius: 5px;
+      margin-top: 60px;
+      line-height: 1.2;
+      max-width: 50%;
+      text-transform: capitalize;
+      color: #fff;
+      text-shadow: 0 1px 81px rgba(0,0,0,0.3);
+    }
+    .subheading {
+      color: #fff;
+      font-weight: 300;
+      font-size: 1.3em;
+      margin-top: 26px;
+      background: rgba(0,0,0,0.5);
+      display: block;
+      width: 45%;
+      padding: 5px 10px;
+      line-height: 30px;
+      text-align: center;
+    }
+  }
+}
+
+.home-banner-links {
+  position: absolute;
+  right: 160px;
+  top: 194px;
+  .banner-btn {
+    padding: 15px 15px;
+    font-size: 1.2em;
+    font-weight: 300;
+    font-family: "museo-sans-condensed";
+    border-radius: 5px;
+    color: #fff;
+    background: rgba(0,0,0,0.1);
+    margin-left: 8px;
+    border: 1px solid transparent;
+    &:hover {
+      border: 1px solid rgba(0,0,0,0.2);
+    }
+  }
+}
+{% endhighlight %}
 
 #### 写 html 来发布活动很麻烦
 现在假设我是站长，也只有我自己来发布新活动，那我可以把新活动的信息直接写成 html。每次活动写成一个 partial 。
