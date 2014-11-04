@@ -20,7 +20,7 @@ title: 笨办法发消息
   <h1>It's Party Time!</h1>
   <p class="subheading">到时聚聚，聊聊程序</p>
   <div class="home-banner-links">
-    <%= link_to “发布新活动” “#”, class: "banner-btn btn" %>
+    <%= link_to "发布新活动", "#", class: "banner-btn btn" %>
   </div>
 </div>
 {% endhighlight %}
@@ -83,9 +83,137 @@ title: 笨办法发消息
 }
 {% endhighlight %}
 
+最终达成这样的效果
+
+![](http://media.happycasts.net/pic/rails10/party_time.png)
+
+给活动列表加个标题，在 welcome.html.erb 中
+
+{% highlight html %}
+<div class="issue-list-header">
+  <div class="container clearfix">
+    <h1 class="issue-list-heading">所有活动都在下面了...</h1>
+  </div>
+</div>
+{% endhighlight %}
+
+再到 welcome.css.scss
+
+{% highlight scss %}
+.issue-list-header {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  margin-top: 0;
+  margin-bottom: 35px;
+  background: #7EB6AD;
+  color: #fff;
+  .issue-list-heading {
+    font-size: 2em;
+    font-weight: normal;
+  }
+}
+{% endhighlight %}
+
 #### 写 html 来发布活动很麻烦
 现在假设我是站长，也只有我自己来发布新活动，那我可以把新活动的信息直接写成 html。每次活动写成一个 partial 。
 
+在 welcome.html.erb 中添加活动列表
+
+{% highlight html %}
+<div class="container clearfix">
+  <div class="issue-list">
+    <article class="issue clearfix">
+      <div class="avatar">
+        <a href="/happypeter">
+          <img src=http://gravatar.com/avatar/a92785d8d68f1d1d83b008574f8b5dba.png?s=512&amp;d=retro alt="">
+</a>      </div>
+      <div class="body">
+        <h5 class="title">
+          <a href="#">Ruby 爱好者</a>
+        </h5>
+        <a class="read-more" href="#">read</a>
+        <span class="meta-data">
+          <a href="/happypeter">happypeter</a>
+        </span>
+      </div>
+      <div class="issue-comment-count">
+        <a href="/issues/8">
+          4
+        </a>
+      </div>
+    </article>
+  </div>
+</div>
+{% endhighlight %}
+
+welcome.css.scss 中对应的 sass
+
+{% highlight sass %}
+
+.issue-list {
+  background: #fff;
+  clear: both;
+  padding: 0 2em;
+  margin-bottom: 1em;
+  border: 1px solid #ddd;
+  article {
+    border-bottom: 1px solid #e3e3e3;
+    position: relative;
+    margin-top: 0;
+    padding: 1em 0;
+    .body {
+      margin-right: 2em;
+      width: 70%;
+      float: left;
+      .read-more{
+        background-color: #316A72;
+        color: #fff;
+        font-size: 13px;
+        border-radius: 4px;
+        letter-spacing: -0.3px;
+        display: inline-block;
+        line-height: 1.7;
+        font-weight: 100;
+        padding: 0 6px;
+      }
+      .meta-data {
+        color: #999;
+        font-size: 12px;
+      }
+
+      h5 {
+        font-size: 22px;
+        line-height: 35px;
+        font-weight: normal;
+        margin: 0 0 5px;
+        a {
+          color: #555;
+          &:hover {
+            color: black;
+          }
+        }
+      }
+    }
+    .issue-comment-count {
+      float: right;
+      margin-top: 15px;
+      a {
+        font-size: 45px;
+      }
+    }
+    .avatar {
+      width: 75px;
+      float: left;
+      img {
+        width: 65px;
+        padding: 4px;
+        border: 1px solid #ddd;
+      }
+    }
+  }
+}
+{% endhighlight %}
 
 
 
