@@ -215,6 +215,50 @@ welcome.css.scss 中对应的 sass
 }
 {% endhighlight %}
 
+### controller 里传输局
+
+page_controller.rb 中添加
+
+{% highlight diff %}
+def welcome
++ @issues  = [ { title: "Ruby lovers", comments: "4" }, { title: "Rails and Laravel", comments: "5" } ]
+end
+{% endhighlight %}
+
+到 welcome.html.erb 中
+
+{% highlight diff %}
+- <%= render partial: 'issue_list' %>
++ <%= render partial: 'issue_list', locals: { issues: @issues } %>
+{% endhighlight %}
+
+这样在 _issue_list.html.erb 中就可以这样来迭代了
+
+{% highlight html %}
+<div class="issue-list">
+  <% issues.each do |i| %>
+    <article class="issue clearfix">
+      <div class="avatar">
+        <a href="/happypeter">
+          <img src=http://gravatar.com/avatar/a92785d8d68f1d1d83b008574f8b5dba.png?s=512&amp;d=retro alt="">
+        </a>
+      </div>
+      <div class="body">
+        <h5 class="title">
+          <%= link_to i[:title], "#" %>
+        </h5>
+        <a class="read-more" href="#">read</a>
+        <span class="meta-data">
+          <a href="/happypeter">happypeter</a>
+        </span>
+      </div>
+      <div class="issue-comment-count">
+        <%= link_to i[:comments], "#" %>
+      </div>
+    </article>
+  <% end %>
+</div>
+{% endhighlight %}
 
 
 - 建立 issue 表
