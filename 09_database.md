@@ -20,21 +20,61 @@ title: 数据的仓库
 
 在登上来看一下，meetup_development 已经建立好了。
 
-每次都等命令行进数据库，不是特别美观。来安装一个小巧的数据库操作软件，叫 Squeal Pro 。
+每次都等命令行进数据库，不是特别美观。来安装一个小巧的数据库操作软件，叫 Sequel Pro 。
 
 <http://www.sequelpro.com/download> 下载之后，放到桌面上，双击就可以打开了。
 
-登录需要填写 Vagrantfile 中指定的 IP，mysql 的用户名 `root` 密码咱们没设置所以为空。要使用 ssh 链接，用户名和密码都是 `vagrant`
+登录需要填写 Vagrantfile 中指定的 IP，mysql 的用户名 `root` 密码咱们没设置所以为空。要使用 ssh 链接，用户名和密码都是 `vagrant` 。 Port 不用填了。
 
-![](http://media.happycasts.net/pic/rails10/squeal.png)
+![](http://media.happycasts.net/pic/rails10/sequel.png)
 
 <!-- https://laracasts.com/lessons/vagrant-and-sequel-pro  -->
 
 ### 建立数据表结构
+更改数据库的表结构，rails 给出的方法是 Miagration <http://guides.rubyonrails.org/> 。
 
-
-生成一个 migration，展示一下，告诉观众 id 会被自动加载，created_at update_at 都自动处理了，被光说，展示一下 schema.rb 和 squeal
+生成一个 migration，展示一下，告诉观众 id 会被自动加载，created_at update_at 都自动处理了，被光说，展示一下 schema.rb 和 sequel
 http://guides.rubyonrails.org/migrations.html
+
+     rails g migration CreateIssues
+
+生成的文件名的前面是时间戳，20141105... 今天就是 2014年11月5号。里面可以添加需要的字段。
+
+{% highlight ruby %}
+class CreateIssues < ActiveRecord::Migration
+  def change
+    create_table :issues do |t|
+      t.string :title
+      t.timestamps
+    end
+  end
+end
+{% endhighlight %}
+
+运行
+
+    rake db:migrate
+
+来把修改内容真正写进 mysql 数据库。会生成 db/schema.rb 文件。
+
+
+### 建立 model
+
+model 文件要放在 app/models 下面，名字叫 issue.rb
+
+{% highlight ruby %}
+class Issue < ActiveRecord::Base
+end
+{% endhighlight %}
+
+这里的 class 命名是很关键的，如果数据库中的表名是 `issues` 那这里的 class 名就必须是 `Issue`，也就是首字母大写，同时变成单数。为啥要这样？
+因为这样 Rails 就可以建立自动的 class 到 table 的映射关系了，以后要操作 issues 这张表，就无比的方便。
+
+
+
+这样就可以打开 `rails console` 来真正对这样表进行操作了，具体可以参考 <http://guides.rubyonrails.org/active_record_basics.html>
+
+<http://happycasts.net/episodes/54> 8：00 的图很精彩。
 
 @issues = Issue.all
 @issue = Issue.find(3)
