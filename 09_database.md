@@ -77,7 +77,7 @@ end
 
 现在在 controller 中使用数据
 
-{% highlight ruby %}
+{% highlight diff %}
 - @issues  = [ { title: "Ruby lovers", comments: "4" }, { title: "Rails and Laravel", comments: "5" } ]
 + @issues = Issue.all
 {% endhighlight %}
