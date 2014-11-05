@@ -20,7 +20,7 @@ title: 数据的仓库
 
 在登上来看一下，meetup_development 已经建立好了。
 
-每次都等命令行进数据库，不是特别美观。来安装一个小巧的数据库操作软件，叫 Sequel Pro 。
+每次都用命令行进数据库，不是特别美观。来安装一个小巧的数据库操作软件，叫 Sequel Pro 。
 
 <http://www.sequelpro.com/download> 下载之后，放到桌面上，双击就可以打开了。
 
@@ -32,9 +32,6 @@ title: 数据的仓库
 
 ### 建立数据表结构
 更改数据库的表结构，rails 给出的方法是 Miagration <http://guides.rubyonrails.org/> 。
-
-生成一个 migration，展示一下，告诉观众 id 会被自动加载，created_at update_at 都自动处理了，被光说，展示一下 schema.rb 和 sequel
-http://guides.rubyonrails.org/migrations.html
 
      rails g migration CreateIssues
 
