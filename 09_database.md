@@ -57,7 +57,6 @@ end
 
 来把修改内容真正写进 mysql 数据库。会生成 db/schema.rb 文件。
 
-
 ### 建立 model
 
 model 文件要放在 app/models 下面，名字叫 issue.rb
@@ -70,30 +69,20 @@ end
 这里的 class 命名是很关键的，如果数据库中的表名是 `issues` 那这里的 class 名就必须是 `Issue`，也就是首字母大写，同时变成单数。为啥要这样？
 因为这样 Rails 就可以建立自动的 class 到 table 的映射关系了，以后要操作 issues 这张表，就无比的方便。
 
-
-
 这样就可以打开 `rails console` 来真正对这样表进行操作了，具体可以参考 <http://guides.rubyonrails.org/active_record_basics.html>
 
-<http://happycasts.net/episodes/54> 8：00 的图很精彩。
+插入需要的记录
 
-@issues = Issue.all
-@issue = Issue.find(3)
+    Issue.create(title: "Ruby Lover")
+    Issue.create(title: "Rails and Laravel")
+    Issue.all
 
-取出的数据到底是什么格式，要让大家看到。
 
-何时引入 model 比较合适？ Issue 自动对应 issues 这张表。
-- 没有 model 也就根本不能进行 crud
-- 所以就是，建表就用 migration，然后就建立 model, 二者缺一都不能真正往里面插入数据
-- 数据插入完毕，就是从 controller 中读出来，然后传给 view
-- 这样这一集的任务就完了
+现在在 controller 中使用数据
 
-- crud
-  - create
-    - t = Tweet.new; t.title = "Ruby" ; t.save
-      - Tweet.create(:title => "Ruby", ...)
-    - t = Tweet.find(3)
-    - same as create
-      - t.update_attributes(...)
-    - t.destory
+{% highlight ruby %}
+- @issues  = [ { title: "Ruby lovers", comments: "4" }, { title: "Rails and Laravel", comments: "5" } ]
++ @issues = Issue.all
+{% endhighlight %}
 
-Issue.destroy_all
+到 _issue_list.html.erb 中在稍作修改就好了。
