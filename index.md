@@ -115,5 +115,27 @@ title: 目录
         x min
       </td>
     </tr>
+    <tr class="episode-wrap">
+      <td class="episode-index">10</td>
+      <td class="episode-title">
+        <a href="10_crud.html">
+          瞄准一个东东来 CRUD
+        </a>
+      </td>
+      <td class="episode-length">
+        x min
+      </td>
+    </tr>
+    <tr class="episode-wrap">
+      <td class="episode-index">11</td>
+      <td class="episode-title">
+        <a href="11_ear.html">
+          网站的耳朵
+        </a>
+      </td>
+      <td class="episode-length">
+        x min
+      </td>
+    </tr>
   </tbody>
 </table>
