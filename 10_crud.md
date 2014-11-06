@@ -188,10 +188,67 @@ end
 现在就来看如果删除一个资源。还是从 view 中的链接开始写。在 issues/show.html.erb 中添加一个删除的链接。
 
 {% highlight erb %}
-gita
+<%= link_to 'Destroy', issue_path(@issue), method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-primary" %>
 {% endhighlight %}
 
+到 app/assets/stylesheets/shared/common.css 给文件添加 .scss 后缀，并且添加一些按钮样式进来。
 
-issue#destroy
+{% highlight sass %}
+.btn-primary {
+  color: white;
+  background: #c0865e;
+  border-color: #b9784c;
+  &:hover {
+    background-color: #b9784c;
+    border-color: #845534;
+  }
+}
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.428571429;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+{% endhighlight %}
+
+issue_show.css.scss 中也要有一点修改
+
+{% highlight diff %}
+.issue-heading {
+...
++ a {
++   margin-left: 30px;
++ }
+}
+{% endhighlight %}
+
+样式弄好了。对应的 route.rb 中要添加
+
+{% highlight ruby %}
+delete 'issues/:id' => 'issues#destroy'
+{% endhighlight %}
+
+再到 issues_controller.rb 添加
+
+{% highlight ruby %}
+def destory
+  issue = Issue.find(params[:id])
+  issue.destory
+  redirect_to :root
+end
+{% endhighlight %}
 
 
