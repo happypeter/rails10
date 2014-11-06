@@ -78,7 +78,7 @@ end
 
 这样 show 页面中再添加合适的 erb 语句就可以展示清楚了。issues/show.html.erb 中放入
 
-{% highlight erb %}
+{% highlight html %}
 <div class="issue-heading">
   <div class="container">
     <%= @issue.title %>
