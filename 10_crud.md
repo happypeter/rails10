@@ -75,7 +75,103 @@ def show
 end
 {% endhighlight %}
 
-这样 show 页面中再添加合适的 erb 语句就可以展示清楚了。
+这样 show 页面中再添加合适的 erb 语句就可以展示清楚了。issues/show.html.erb 中放入
+
+{% highlight erb %}
+<div class="issue-heading">
+  <div class="container">
+    <%= @issue.title %>
+  </div>
+</div>
+<div class="container">
+  <div class="replies">
+    <article class="reply clearfix">
+      <div class="avatar">
+        <img src="http://gravatar.com/avatar/a92785d8d68f1d1d83b008574f8b5dba.png?s=512&amp;d=retr" alt="" class="image-circle">
+      </div>
+      <div class="body">
+        <div class="heading">
+          <h5 class="name"><a href="#">happypeter</a></h5>
+        </div>
+        <%= @issue.content %>
+      </div>
+    </article>
+  </div>
+</div>
+{% endhighlight %}
+
+再来创建一个对应的 app/assets/stylesheets/sections/issue_show.css.scss
+
+{% highlight css %}
+@import "globals/variables";
+.issue-heading {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  margin-top: 0;
+  margin-bottom: 35px;
+  background: $brand-color;
+  color: #fff;
+  font-size: 2em;
+  i.fa {
+    padding-right: 20px;
+  }
+}
+
+.reply {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+  width: 91%;
+  .heading {
+    margin-bottom: 5px;
+    .name {
+      font-size: 18px;
+      display: inline;
+      font-weight: normal;
+    }
+    .datetime {
+      color: #999;
+      font-size: 0.9em;
+    }
+  }
+  .body {
+    padding: 15px;
+    border-radius: 5px;
+    position: relative;
+    overflow: visible;
+    float: left;
+    width: 87%;
+    border: 1px solid #ddd;
+    line-height: 26px;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 21px;
+      left: -6px;
+      width: 10px;
+      height: 10px;
+      background: #fff;
+      border-left: 1px solid #cad5e0;
+      border-top: 1px solid #cad5e0;
+      -moz-transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+    }
+  }
+  .avatar {
+    float: left;
+    margin-right: 29px;
+    position: relative;
+    overflow: visible;
+    text-align: center;
+    .image-circle {
+      width: 75px;
+      border-radius: 50%;
+    }
+  }
+}
+{% endhighlight %}
 
 
 但是再来稍微优化一些代码。到 _issue_list.html.erb
