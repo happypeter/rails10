@@ -18,9 +18,10 @@ title: 瞄准一个东东，来 CRUD
 下面打开 rails console 插入一下数据
 
     i = Issue.find(1)
-    i.update_attributes()
+    i.content = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod"
+    i.save
     i = Issue.find(2)
-    i.update_attributes()
+    ...
 
 
 添加路由
@@ -103,19 +104,15 @@ end
 再来创建一个对应的 app/assets/stylesheets/sections/issue_show.css.scss
 
 {% highlight css %}
-@import "globals/variables";
 .issue-heading {
   border-bottom: 1px solid #ddd;
   padding-bottom: 30px;
   padding-top: 30px;
   margin-top: 0;
   margin-bottom: 35px;
-  background: $brand-color;
+  background: #7EB6AD;
   color: #fff;
   font-size: 2em;
-  i.fa {
-    padding-right: 20px;
-  }
 }
 
 .reply {
@@ -129,10 +126,6 @@ end
       font-size: 18px;
       display: inline;
       font-weight: normal;
-    }
-    .datetime {
-      color: #999;
-      font-size: 0.9em;
     }
   }
   .body {
