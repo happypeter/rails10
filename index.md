@@ -137,5 +137,16 @@ title: 目录
         x min
       </td>
     </tr>
+    <tr class="episode-wrap">
+      <td class="episode-index">12</td>
+      <td class="episode-title">
+        <a href="12_beauty.html">
+          Code Beauty
+        </a>
+      </td>
+      <td class="episode-length">
+        x min
+      </td>
+    </tr>
   </tbody>
 </table>
