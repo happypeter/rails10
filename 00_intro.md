@@ -3,6 +3,7 @@ layout: default
 title: 简介
 ---
 
+![](http://media.happycasts.net/pic/rails10/rails10_poster.png)
 
 ### 什么是 Ruby On Rails
 - web 开发编程框架
