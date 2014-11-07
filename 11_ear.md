@@ -61,7 +61,34 @@ end
 </div>
 {% endhighlight %}
 
-再来补充几行 css...
+再来补充几行 css...到 common.css.scss
+
+{% highlight css %}
+
+// form.css
+form {
+  input {
+    font-size: 21px;
+    width: 100%;
+    padding: 10px 12px;
+    color: #555;
+  }
+  textarea {
+    height: 180px;
+    font-size: 21px;
+    width: 100%;
+    padding: 10px 12px;
+    color: #555;
+  }
+  label {
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+  dd {
+    margin: 0;
+  }
+}
+{% endhighlight %}
 
 这样，刷新页面会报错
 
