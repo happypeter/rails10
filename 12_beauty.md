@@ -1,8 +1,14 @@
 ---
 layout: default
-title: Have A Good REST!
+title: Code Beauty
 ---
 
+> Beauty tames complexity
+
+代码的美丽程度也显示你驾驭复杂问题的能力。
+
+
+### 更新一个资源
 来添加一个 edit 按钮，到 views/issues/show.html.erb
 
 {% highlight erb %}
@@ -63,7 +69,27 @@ patch 'issues' => 'issues#update'
 
  ### resources
 
-
+<!-- 不要太絮叨，给出简约的代码，让大家体会到高效实用是最重要的。 -->
 好，到这里任务就完成了，依旧是看看代码能否重构一下。
 
-- resources http://guides.rubyonrails.org/routing.html 2.2
+到 route.rb 中，所有的指向 issues_controller.rb 的语句都可以删除，而用一行代替
+
+{% highlight ruby %}
+resources :issues
+{% endhighlight %}
+
+这一行到底起什么作用。到终端中
+
+   rake routes
+
+一看便知。具体参考文档 <http://guides.rubyonrails.org/routing.html> 。
+
+一个小点需要调整，首页的 Issue 都没有时间。而且最好是最新的 issue 在上面。
+
+### RubyGems
+
+现在我想要用 <http://fontawesome.io/> 那我可以直接下载它的代码来直接实用。但是更好的办法是添加 font-awesome 这个 gem 。很多第三方的代码，你可以放到你自己的项目代码中，但是如果恰好有人把代码打包成了 gem 那最好是来装包。人家的代码和你的分开，升级维护起来都方便的多。
+
+到 rubygems.org 搜一下 font-awesome，可以用 `gem install ...` 来进行安装，也可以添加到 Gemfile 之中，使用 `bundle install` 进行安装。
+
+美化一下 footer
