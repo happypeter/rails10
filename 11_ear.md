@@ -38,7 +38,6 @@ end
   <%= f.text_area :content %>
   <%= f.submit %>
 <% end %>
-<% end %>
 {% endhighlight %}
 
 刷新页面之前，你还是不要拦着我，让我添加几行 html 标签进来，你不用看
@@ -90,6 +89,24 @@ form {
 }
 {% endhighlight %}
 
+创建 sections/issue_new.css.scss
+
+{% highlight sass %}
+.new-issue-form-container {
+  width: 800px;
+  background: white;
+  margin: 30px auto;
+  .new-issue-form {
+    width: 600px;
+    margin: 10px auto;
+  }
+}
+.submit-issue-button {
+  height: 50px;
+  width: 100%;
+}
+{% endhighlight %}
+
 这样，刷新页面会报错
 
     undefined method `issues_path'
@@ -122,8 +139,7 @@ end
 
 {% highlight ruby %}
 def create
-  issue = Issue.new(params[:issue])
-  issue.save
+  Issue.create(params[:issue])
   redirect_to :root
 end
 {% endhighlight %}
@@ -146,14 +162,10 @@ private
 然后
 
 {% highlight diff %}
-- issue = Issue.new(params[:issue])
-+ issue = Issue.new(issue_params)
+- Issue.create(params[:issue])
++ Issue.create(issue_params)
 {% endhighlight %}
 
 这样再来提交，操作成功了。
 
-### resources
 
-好，到这里任务就完成了，依旧是看看代码能否重构一下。
-
-- resources http://guides.rubyonrails.org/routing.html 2.2
