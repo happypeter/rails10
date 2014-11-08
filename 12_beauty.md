@@ -77,11 +77,26 @@ resources :issues
 
 这一行到底起什么作用。到终端中
 
-   rake routes
+    rake routes
 
 一看便知。具体参考文档 <http://guides.rubyonrails.org/routing.html> 。
 
-一个小点需要调整，首页的 Issue 都没有时间。而且最好是最新的 issue 在上面。
+一个小点需要调整，首页的 Issue 都没有时间。
+
+_issue_list.html.erb 中添加
+
+{% highlight erb %}
+<%= time_ago_in_words(i.created_at) %> ago
+{% endhighlight %}
+
+最好是最新的 issue 在上面。到 weclome_controller.rb 中稍作调整就好了。
+
+{% highlight diff %}
+def welcome
+- @issues  = Issue.all
++ @issues  = Issue.all.reverse
+end
+{% endhighlight %}
 
 ### RubyGems
 
