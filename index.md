@@ -159,5 +159,16 @@ title: 目录
         x min
       </td>
     </tr>
+    <tr class="episode-wrap">
+      <td class="episode-index">14</td>
+      <td class="episode-title">
+        <a href="14_goodbye.html">
+          Until Next Time, Goodbye!
+        </a>
+      </td>
+      <td class="episode-length">
+        x min
+      </td>
+    </tr>
   </tbody>
 </table>
