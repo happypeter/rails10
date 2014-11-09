@@ -3,7 +3,6 @@ layout: default
 title: Until next time, Goodbye!
 ---
 
-
 ### recap 一下
 回顾一下 Rails 10 日谈，到底都做了哪些内容。你和我一起实现了一个真正的 Web App，虽然局部的功能还是可以进一步增强，但是，咱们的所有操作都是真正的 Web 开发者的实际真刀真枪的东西。而不仅仅是一个教学 demo 。
 

@@ -13,7 +13,7 @@ title: 目录
         </a>
       </td>
       <td class="episode-length">
-        x min
+        4 min
       </td>
     </tr>
     <tr class="episode-wrap">
@@ -24,7 +24,7 @@ title: 目录
         </a>
       </td>
       <td class="episode-length">
-        x min
+        2 min
       </td>
     </tr>
     <tr class="episode-wrap">
@@ -35,7 +35,7 @@ title: 目录
         </a>
       </td>
       <td class="episode-length">
-        x min
+        3 min
       </td>
     </tr>
     <tr class="episode-wrap">
@@ -46,7 +46,7 @@ title: 目录
         </a>
       </td>
       <td class="episode-length">
-        x min
+        4 min
       </td>
     </tr>
     <tr class="episode-wrap">
@@ -57,7 +57,7 @@ title: 目录
         </a>
       </td>
       <td class="episode-length">
-        x min
+        7 min
       </td>
     </tr>
     <tr class="episode-wrap">
@@ -68,7 +68,7 @@ title: 目录
         </a>
       </td>
       <td class="episode-length">
-        x min
+        4 min
       </td>
     </tr>
     <tr class="episode-wrap">
@@ -79,7 +79,7 @@ title: 目录
         </a>
       </td>
       <td class="episode-length">
-        x min
+        7 min
       </td>
     </tr>
     <tr class="episode-wrap">
@@ -90,7 +90,7 @@ title: 目录
         </a>
       </td>
       <td class="episode-length">
-        x min
+        4 min
       </td>
     </tr>
     <tr class="episode-wrap">
@@ -101,7 +101,7 @@ title: 目录
         </a>
       </td>
       <td class="episode-length">
-        x min
+        4 min
       </td>
     </tr>
     <tr class="episode-wrap">
@@ -112,7 +112,7 @@ title: 目录
         </a>
       </td>
       <td class="episode-length">
-        x min
+        5 min
       </td>
     </tr>
     <tr class="episode-wrap">
@@ -123,7 +123,7 @@ title: 目录
         </a>
       </td>
       <td class="episode-length">
-        x min
+        7 min
       </td>
     </tr>
     <tr class="episode-wrap">
@@ -134,7 +134,7 @@ title: 目录
         </a>
       </td>
       <td class="episode-length">
-        x min
+        5 min
       </td>
     </tr>
     <tr class="episode-wrap">
@@ -145,7 +145,7 @@ title: 目录
         </a>
       </td>
       <td class="episode-length">
-        x min
+        6 min
       </td>
     </tr>
     <tr class="episode-wrap">
@@ -156,7 +156,7 @@ title: 目录
         </a>
       </td>
       <td class="episode-length">
-        x min
+        7 min
       </td>
     </tr>
     <tr class="episode-wrap">
@@ -167,7 +167,7 @@ title: 目录
         </a>
       </td>
       <td class="episode-length">
-        x min
+        2 min
       </td>
     </tr>
   </tbody>
