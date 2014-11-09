@@ -5,7 +5,8 @@ title: 添加评论
 
 现在来给大家添加评论功能。关注的核心点是如果创建两种资源之间的一对多关系。
 
-### 创建 model
+### 创建 model 和 form
+
 
 先来创建 model 和 migration 文件
 
@@ -13,15 +14,13 @@ title: 添加评论
 
 为了体现归属关系，也就是一个 issue 对应多个 comment 的关系。要在 issue 中添加一个新的字段 `issue_id` 这个在后面会有妙用。
 
-### 创建 form
-
 到 views/issues/show.html.erb 中添加
 
 {% highlight erb %}
 <%= render partial: 'shared/comment_box', locals: {issue: @issue} %>
 {% endhighlight %}
 
-创建 views/shared/_comment_box.html.erb
+创建 views/shared/_comment_box.html.erb，这次使用 form_tag <http://guides.rubyonrails.org/form_helpers.html> 比 form_for 更加直白简单。
 
 {% highlight erb %}
 <article class="reply clearfix">

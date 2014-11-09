@@ -57,3 +57,47 @@ web app -rails10日谈
 4
 5
 6
+#### 第 1 章 课程介绍
+阐述本课程的覆盖内容，适合观众。
+
+#### 第 2 章 使用 Vagrant 安装 ubuntu 系统
+基本开发环境搭建，采用 vagrant 的形式安装 ubuntu Linux 系统的虚拟机。
+
+#### 第 3 章 安装 Rails
+一步一步的安装 Rails 。
+
+#### 第 4 章 Hello World
+跑一个基本的 Rails 程序起来。
+
+#### 第 5 章 静态页面
+制作网站首页的前端页面。
+
+#### 第 6 章 The Rails Way
+采用 Rails 自己的巧妙机制来重构前面的写出的静态页面。
+
+#### 第 7 章 Asset Pipeline
+Rails 下如何用 Asset Pipeline 高效管理图片，css 和 js 这些代码。
+
+#### 第 8 章 Keep it simple, Let it grow
+Css 组织结构，Sass，还有 git 的基本学习建议。
+
+#### 第 9 章 笨办法发消息
+后台的 Rails Console 是一个调试程序的好方法。
+
+#### 第 10 章 数据的仓库
+Rails 有自己的一套操作数据库的借口，比 SQL 语句简单许多。
+
+#### 第 11 章 瞄准一个东东 CRUD
+对一个资源的 Create Read Update Delete 操作 。
+
+#### 第 12 章 网站的耳朵
+Rails 使用 form 的基本技巧。
+
+#### 第 13 章 Code Beauty
+Rails 可以通过各种实用的内置借口，和用 Gem 有效分类第三方代码的形式来达到代码的简约和美观。
+
+#### 第 14 章 添加评论
+添加评论功能，主要涉及到如何建立两个 resource 之间的 “一对多” 关系。
+
+#### 第 15 章 Until Next Time, Goodbye!
+总结和下一步的学习建议。
