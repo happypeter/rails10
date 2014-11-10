@@ -5,41 +5,22 @@ title: 简介
 
 ![](http://media.happycasts.net/pic/rails10/rails10_poster.png)
 
+HI，我是 happypeter，本套课程叫做 《Rails 10日谈》，我来和你分享用 Ruby On Rails 打造一个 Web 应用程序的过程。
+
 ### 什么是 Ruby On Rails
-- web 开发编程框架
-- 使用 Ruby 语言
-- 强调 Rails 就是适合初学者的，
 
-和以往的很多编程方式不同，Rails 是关注程序员 happiness 的，而快乐的程序员才是最有效率的程序员。
-html/css/js/ruby 其实入门都只要几十分钟，但是如果不拿它们实际做东西，那学习就会走弯路
-Rails 中充满了摩登开发者的工作流：
-
-关注 Programmer Happiness
-
-Jeffery: Jquery is just appealing to beginners, and that's good.
-
-Taloy: laravel is similarly positioned as Jquery. Laravel is, across all.
-languages and frameworks, is at the good position to be people's first
-framework. Becasue, 1. php is so easy to learn and host and cheap to host 2.
-laravel is a very nature framework is someone is looking to do php, because
-the syntax is very readable and easy, the document is pretty through, less
-confusing than some of the alternatives. It is going to be a nature stoping
-point for new developers who do not have much php experience, but they start
-doing laravel
-
-Jeffery: laravel can be appealing to both new comers and seasoned developers
+Ruby On Rails 是最为流行的 Web 开发框架之一。同时围绕这一个框架，有着一个非常活跃的社区。Github Twitter New Relic groupon 都是用 Rails 开发的。 Rails 是非常适合小团队做创业项目的，我想这个就源于它诞生的环境，就像 Rails 的作者 DHH 本人，它的创业项目 Basecamp 在初期的很多年里就是他自己一个开发者。而 Rails 不是高深的理论的产物，而是从 Basecamp 这个程序中抽出来的可以复用的代码。DHH 说过自己是一个工匠，不是一个工程师，Rails 为打造精美的产品的人而生。
 
 ### 课程适合观众
 
-不一定要会 Ruby，但是最少要对 html 和 Css 有基本的理解。同时如果你的日常工作中用的也不是 Ruby，那本套课程也同样适合你，因为 Rails 不仅仅是一个框架，也是一个老手可以具体的讨论编程思路的平台，我就有朋友是写 Java 和 PHP 的，学了 Rails 之后感觉编程思路好了不少，另外其实很多知名的框架，例如 Python 的 Django，PHP 的 Laravel，Nodejs 的 Express，都是深受 Rails 影响的，学了 Rails 再去用这些框架，也基本不用学什么了。
+Ruby on Rails 使用 Ruby 这种编程语言。但是要学习本课程，你不一定要会 Ruby，但是最少要稍微写过一点 html 和 Css 。同时如果你的日常工作中用的也不是 Ruby，那本套课程也同样适合你，因为 Rails 不仅仅是一个框架，也是一个老手可以具体的讨论编程思路的平台，我就有朋友是写 Java 和 PHP 的，学了 Rails 之后感觉编程思路好了不少，另外其实很多知名的框架，例如 Python 的 Django，PHP 的 Laravel，Nodejs 的 Express，都是深受 Rails 影响的，学了 Rails 再去用这些框架，也就很容易了。
+
+课程非常适合 Web 开发的初学者来学习，因为 Ruby 是非常人性化的一门编程语言，Rails 中总结的各种经验又可以给新手指明一个学习的方向。另外要把一个 Rails 项目部署到互联网上也是非常的便宜，几十块钱就能搞定。
 
 ### 课程内容
-课程以动手做成一个 web 应用为主线，很多地方先用本方法把功能做成，然后再看，用 rails 能够给我带来社么便利。
+课程是以动手为主线的，要做的时这样一个组织聚会的网站，可以发布聚会信息，参与者可以发表评论。每一个 Rails 知识点得引入都是为了解决实际动手中遇到的一个坎，从操作中学习 Ruby 语言，数据库操作，表单提交，http 基础，让你有一个生动直观的感受。
 
-我的这套课程的特点是，你真的可以跟着我把这个东西做成。而不是只是提供给你有用的知识。
-课程的思路是这样的：一个小功能一个小功能的做，可能的话，每个小功能都先用笨办法完成一遍，然后再用 rails 的巧妙机制完成。笨办法可以有助于理解基本的道理，让你不晕，而 rails 带来的巧妙方法，可以让代码写得更加简约整洁，便于维护。
-
-重点展示的知识点：Layout，partial，erb，表单提交...
+欢迎你来到 Web 开发的世界，咱们一起手拉手走进互联网的蔚蓝世界。
 
 ### imooc 的上线资料
 
@@ -57,7 +38,7 @@ Web 开发是个复杂工作，涉及到得技术种类繁多。Ruby On Rails �
 
 #### "老师告诉你能学到什么 (通过课程你能学到的内容) 可以写的更生动和有趣"
 
-如何创建更新删除资源。采用 Rails 的借口高效操作数据库。创建数据库一对多关系。表单提交底层工作原理。知识点的引出都是穿插在实际开发中的，每一个点都是为了解决一个棘手的问题。更为重要的，你可以看到一个 Web App 的真实的打造过程：虚拟机开发环境的运用测量，编辑器的实操技巧，代码优化的思路...这些些很难从文档中读出来的东西。
+如何创建更新删除资源。采用 Rails 的接口高效操作数据库。创建数据库一对多关系。表单提交底层工作原理。知识点的引出都是穿插在实际开发中的，每一个点都是为了解决一个棘手的问题。更为重要的，你可以看到一个 Web App 的真实的打造过程：虚拟机开发环境的运用测量，编辑器的实操技巧，代码优化的思路...这些些很难从文档中读出来的东西。
 
 #### "课程须知 (学习课程前你要具备的知识或相关技能) 可以写的更生动和有趣"
 
@@ -102,7 +83,7 @@ Rails 有自己的一套操作数据库的借口，比 SQL 语句简单许多。
 Rails 使用 form 的基本技巧。
 
 #### 第 13 章 Code Beauty
-Rails 可以通过各种实用的内置借口，和用 Gem 有效分类第三方代码的形式来达到代码的简约和美观。
+Rails 可以通过各种实用的内置接口和用 Gem 有效分类第三方代码的形式来达到代码的简约和美观。
 
 #### 第 14 章 添加评论
 添加评论功能，主要涉及到如何建立两个 resource 之间的 “一对多” 关系。
