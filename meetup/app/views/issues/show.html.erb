@@ -1,0 +1,24 @@
+<div class="issue-heading">
+  <div class="container">
+    <%= @issue.title %>
+    <%= link_to 'Destroy', issue_path(@issue), method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-primary" %>
+    <%= link_to 'edit', edit_issue_path(@issue), class: "btn btn-primary" %>
+  </div>
+</div>
+<div class="container">
+  <div class="replies">
+    <article class="reply clearfix">
+      <div class="avatar">
+        <img src="http://gravatar.com/avatar/a92785d8d68f1d1d83b008574f8b5dba.png?s=512&amp;d=retr" alt="" class="image-circle">
+      </div>
+      <div class="body">
+        <div class="heading">
+          <h5 class="name"><a href="#">happypeter</a></h5>
+        </div>
+        <%= @issue.content %>
+      </div>
+    </article>
+    <%= render partial: 'shared/comment_list', locals: {comments: @comments} %>
+    <%= render partial: 'shared/comment_box', locals: {issue: @issue} %>
+  </div>
+</div>

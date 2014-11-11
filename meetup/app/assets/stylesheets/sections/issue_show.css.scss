@@ -1,0 +1,63 @@
+.issue-heading {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  margin-top: 0;
+  margin-bottom: 35px;
+  background: #7EB6AD;
+  color: #fff;
+  font-size: 2em;
+  a {
+    margin-left: 30px;
+  }
+}
+
+.reply {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+  width: 91%;
+  .heading {
+    margin-bottom: 5px;
+    .name {
+      font-size: 18px;
+      display: inline;
+      font-weight: normal;
+    }
+  }
+  .body {
+    padding: 15px;
+    border-radius: 5px;
+    position: relative;
+    overflow: visible;
+    float: left;
+    width: 87%;
+    border: 1px solid #ddd;
+    line-height: 26px;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 21px;
+      left: -6px;
+      width: 10px;
+      height: 10px;
+      background: #fff;
+      border-left: 1px solid #cad5e0;
+      border-top: 1px solid #cad5e0;
+      -moz-transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+    }
+  }
+  .avatar {
+    float: left;
+    margin-right: 29px;
+    position: relative;
+    overflow: visible;
+    text-align: center;
+    .image-circle {
+      width: 75px;
+      border-radius: 50%;
+    }
+  }
+}

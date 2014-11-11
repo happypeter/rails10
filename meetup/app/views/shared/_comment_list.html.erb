@@ -1,0 +1,18 @@
+ <% comments.each do |c| %>
+    <div class="reply clearfix">
+       <div class="avatar">
+         <%= link_to '#' do %>
+           <%= image_tag c.user_avatar, class: 'image-circle' %>
+         <% end %>
+       </div>
+       <div class="body">
+         <div class="heading">
+            <h5 class="name"><%= link_to c.username, "#" %></h5>
+            <span class="datetime">
+              <%= time_ago_in_words c.created_at %> ago
+            </span>
+         </div>
+         <%= c.content %>
+       </div>
+    </div>
+  <% end %>
