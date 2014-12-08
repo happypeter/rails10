@@ -244,9 +244,9 @@ delete 'issues/:id' => 'issues#destroy'
 再到 issues_controller.rb 添加
 
 {% highlight ruby %}
-def destory
+def destroy
   issue = Issue.find(params[:id])
-  issue.destory
+  issue.destroy
   redirect_to :root
 end
 {% endhighlight %}
