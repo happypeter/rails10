@@ -157,9 +157,9 @@ ul {
 a {
   text-decoration: none;
   color: #c0865e;
-  &:hover {
-    color: #845534;
-  }
+}
+a:hover {
+  color: #845534;
 }
 {% endhighlight %}
 
