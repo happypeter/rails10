@@ -57,7 +57,7 @@ end
 
     rails g controller issues show # 注意是 issues 不是 issue
 
-停一停，看一看，都生出了那些文件，route.rb 中这句是没用的，先删掉。不仅 issues_controller.rb 有了，还声称了 show action 对应的模板，还真是省事不少。
+停一停，看一看，都生出了那些文件，routes.rb 中这句是没用的，先删掉。不仅 issues_controller.rb 有了，还生成了 show action 对应的模板，还真是省事不少。
 
 
 下面就是要填充 views/issues/show.html.erb 中的内容了。先得到 issues_controller.rb 中
@@ -174,7 +174,7 @@ end
 + <%= link_to i.title, issue_path(i) %>
 {% endhighlight %}
 
-这样当然会报错，但是 rails 提供了给路由起名字的机制，叫 "named route"，需要做的就是到 route.rb 中
+这样当然会报错，但是 rails 提供了给路由起名字的机制，叫 "named route"，需要做的就是到 routes.rb 中
 
 {% highlight diff %}
 - get '/issues/:id' => "issues#show"
@@ -235,7 +235,7 @@ issue_show.css.scss 中也要有一点修改
 }
 {% endhighlight %}
 
-样式弄好了。对应的 route.rb 中要添加
+样式弄好了。对应的 routes.rb 中要添加
 
 {% highlight ruby %}
 delete 'issues/:id' => 'issues#destroy'

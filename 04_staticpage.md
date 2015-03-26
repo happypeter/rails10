@@ -151,7 +151,7 @@ ul {
 {% endhighlight %}
 
 
-到页面中发现美中不足的是连接是有下划线的，为了修正这个问题，到 common.css 之中，添加
+到页面中发现美中不足的是链接是有下划线的，为了修正这个问题，到 common.css 之中，添加
 
 {% highlight css %}
 a {
@@ -198,7 +198,7 @@ header 和 footer，页面的头和脚都有了，下面主题部分也稍微添
 </body>
 {% endhighlight %}
 
-但是这样的背景图是随着页面的缩放会变得很那看的。所以这里引入一个 js 的插件 [Anystrech](https://github.com/danmillar/jquery-anystretch)
+但是这样的背景图是随着页面的缩放会变得很难看的。所以这里引入一个 js 的插件 [Anystrech](https://github.com/danmillar/jquery-anystretch)
 
 创建 public/js/ 目录，把压缩过的文件放进去
 
