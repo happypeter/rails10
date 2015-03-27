@@ -28,4 +28,4 @@ sass 甚至比 css 还有简单友好，所以即使你是 css 零基础，也�
 
 ### git 很牛
 
-但是不要跟 rails 一起学。Railstutorial 这本书中就是把如何用 git 辅助 rails 开发都很好的展示出来了。但是如果你现在 rails 和 git 都是 0 基础，那相信我，千万别把这两个东西放到一块来起步，因为他俩都是挺复杂了，复杂+复杂=举步维艰。
+但是不要跟 rails 一起学。[Railstutorial](https://www.railstutorial.org/) 这本书中就是把如何用 git 辅助 rails 开发都很好的展示出来了。但是如果你现在 rails 和 git 都是 0 基础，那相信我，千万别把这两个东西放到一块来起步，因为他俩都是挺复杂了，复杂+复杂=举步维艰。

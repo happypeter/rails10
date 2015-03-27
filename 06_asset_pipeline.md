@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Asset Pipleline
+title: Asset Pipeline
 ---
 
 其实有一个秘密我还没告诉你，就是放在 views 目录下的所谓的模板文件，其实一般后缀不是 .html 而是 .html.erb 。

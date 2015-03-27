@@ -31,7 +31,7 @@ title: 数据的仓库
 <!-- https://laracasts.com/lessons/vagrant-and-sequel-pro  -->
 
 ### 建立数据表结构
-更改数据库的表结构，rails 给出的方法是 Miagration <http://guides.rubyonrails.org/> 。
+更改数据库的表结构，rails 给出的方法是 Migration <http://guides.rubyonrails.org/> 。
 
      rails g migration CreateIssues
 

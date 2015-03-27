@@ -42,7 +42,7 @@ title: 添加评论
 </article>
 {% endhighlight %}
 
-到 route.rb 添加
+到 routes.rb 添加
 
 {% highlight ruby %}
 # comments
@@ -176,5 +176,5 @@ end
 + <%= image_tag c.user_avatar, class: 'image-circle' %>
 {% endhighlight %}
 
-这样就可以真确显示头像了。
+这样就可以正确显示头像了。
 

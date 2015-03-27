@@ -15,12 +15,12 @@ title: The Rails Way
 
 ![](http://media.happycasts.net/pic/rails10/rails_way.png)
 
-rails 的根本骨架是上面的 MVC 结构，不过这一集只来关注 route -> controller -> view 的这条线。
+rails 的根本骨架是上面的 MVC 结构，不过这一集只来关注 routes -> controller -> view 的这条线。
 
 
 ### 移动 welcome.html
 
-到 route.rb 中添加
+到 routes.rb 中添加
 
 {% highlight ruby%}
 root 'page#welcome'
@@ -40,7 +40,7 @@ end
 
 ### 移动 about.html 页面
 
-到 route.rb 中，添加
+到 routes.rb 中，添加
 
 {% highlight ruby %}
 get '/about' => 'page#about'

@@ -13,7 +13,7 @@ title: 网站的耳朵
 <%= link_to "发布新活动", "/issues/new", class: "banner-btn btn" %>
 {% endhighlight %}
 
-route.rb 中添加
+routes.rb 中添加
 
 {% highlight ruby %}
 get '/issues/new' => "issues#new" # 主要这一行要写在 get '/issues/:id' 的上面
@@ -111,14 +111,14 @@ form {
 
     undefined method `issues_path'
 
-所以还要回  route.rb 添加
+所以还要回  routes.rb 添加
 
 {% highlight ruby %}
 get 'issues' => 'issues#index', :as => 'issues'
 {% endhighlight %}
 
 这样就可以正确显示 form 了，打开浏览器，inspect element 查看源码，目前注意的就是两个东西 `method` 和 `action` 因为他俩决定了表单要提交到哪里。
-浏览其中提交一下，报错 `No route matches [POST] "/issues"` 所以就知道 route.rb 中应该怎么写了。
+浏览其中提交一下，报错 `No route matches [POST] "/issues"` 所以就知道 routes.rb 中应该怎么写了。
 
 {% highlight ruby %}
 post 'issues' => 'issues#create'

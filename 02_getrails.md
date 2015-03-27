@@ -50,7 +50,7 @@ title: 安装 rails
 
 ![](http://media.happycasts.net/pic/rails10/rails.jpeg)
 
-为了让你可以跟着我一起做，所以咱俩都把版本控制在 4.1.2 吧，经管我的代码应该是用 rails 4.0 只上的版本都可以跑起来
+为了让你可以跟着我一起做，所以咱俩都把版本控制在 4.1.2 吧，尽管我的代码应该是用 rails 4.0 之上的版本都可以跑起来
 
     gem install rails -v 4.1.2
     rbenv rehash # 导出 gem 中提供的系统命令
