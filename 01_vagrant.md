@@ -20,6 +20,8 @@ title: 使用 vagrant 安装 ubuntu 系统
 
 ### 到 vagrantcloud 上找一个 box
 
+更新： vagrantcloud.com 现在已经合并到了 <https://atlas.hashicorp.com> .
+
 就找一个干净的 ubuntu14.04 系统就行。使用 <https://vagrantcloud.com/ubuntu/boxes/trusty64> 。
 
 这个就是我要的64位 ubuntu14.04 系统。到终端里执行
