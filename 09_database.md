@@ -26,7 +26,7 @@ title: 数据的仓库
 
 登录需要填写 Vagrantfile 中指定的 IP，mysql 的用户名 `root` 密码咱们没设置所以为空。要使用 ssh 链接，用户名和密码都是 `vagrant` 。 Port 不用填了。
 
-![](http://media.happycasts.net/pic/rails10/sequel.png)
+![](http://media.haoduoshipin.com/pic/rails10/sequel.png)
 
 <!-- https://laracasts.com/lessons/vagrant-and-sequel-pro  -->
 

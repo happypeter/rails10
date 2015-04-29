@@ -85,7 +85,7 @@ title: 笨办法发消息
 
 最终达成这样的效果
 
-![](http://media.happycasts.net/pic/rails10/party_time.png)
+![](http://media.haoduoshipin.com/pic/rails10/party_time.png)
 
 给活动列表加个标题，在 welcome.html.erb 中
 

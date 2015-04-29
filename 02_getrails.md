@@ -7,7 +7,7 @@ title: 安装 rails
 
 ### 先来安装 ruby 语言
 
-![](http://media.happycasts.net/pic/rails10/ruby.jpeg)
+![](http://media.haoduoshipin.com/pic/rails10/ruby.jpeg)
 
 很多人直觉上认为要先学 ruby 再来看 rails，这个我不同意。第一，不用 rails 不作出点实际的东西，编程语言学习必然走纸上谈兵的弯路；第二，实际上，ruby 本身是一种非常人性化的语言，仅仅就我的这门课来讲，用到的 ruby 语句都是很简单的，可以看懂的。So take it esay!
 
@@ -48,7 +48,7 @@ title: 安装 rails
 
 这样可以让装包过程变得快一点。
 
-![](http://media.happycasts.net/pic/rails10/rails.jpeg)
+![](http://media.haoduoshipin.com/pic/rails10/rails.jpeg)
 
 为了让你可以跟着我一起做，所以咱俩都把版本控制在 4.1.2 吧，尽管我的代码应该是用 rails 4.0 之上的版本都可以跑起来
 

@@ -5,7 +5,7 @@ title: 使用 vagrant 安装 ubuntu 系统
 
 我使用的是苹果笔记本，跑 Mac 系统，但是我的 rails 程序要跑在 ubuntu 系统上。那最简单的解决方案就是安装 virtualbox 虚拟机，再装上 vagrant 。 这样就很容易的把 ubuntu 装上了。当然如果你已经习惯了用其他的方式安装 ubuntu 也是可以的。
 
-![](http://media.happycasts.net/pic/rails10/vagrant.png)
+![](http://media.haoduoshipin.com/pic/rails10/vagrant.png)
 
 ### 安装 virtualbox 和 vagrant
 
@@ -56,4 +56,4 @@ end
 
 来加载设置就可以了。
 
-关于 vagrant 的更为丰富的使用方法，参考 <http://happycasts.net/episodes/105>
+关于 vagrant 的更为丰富的使用方法，参考 <http://haoduoshipin.com/episodes/105>

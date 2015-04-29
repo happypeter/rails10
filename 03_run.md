@@ -7,7 +7,7 @@ title: 运行第一个 rails 程序
 
 ### 共享文件夹和设置 IP
 
-![](http://media.happycasts.net/pic/rails10/shared_folder.png)
+![](http://media.haoduoshipin.com/pic/rails10/shared_folder.png)
 
 不过需要先来搞清楚一个简单的机制，共享文件夹。把程序代码放到共享文件夹之中，这样，Mac 机器作为写代码的平台，上面配置好的 sublimtText vim 和 git 还有搜狗输入法等等都能直接用。 虚拟机里的 ubuntu 是程序的运行平台，这样的好处是不用担心在 Mac 上安装很多软件，把系统搞坏；同时 Rails 部署到服务器上，一般都是运行在 Linux 系统之上的，本地开发环境和未来的部署环境一样，会省去很多麻烦。
 

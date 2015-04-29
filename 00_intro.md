@@ -3,7 +3,7 @@ layout: default
 title: 简介
 ---
 
-![](http://media.happycasts.net/pic/rails10/rails10_poster.png)
+![](http://media.haoduoshipin.com/pic/rails10/rails10_poster.png)
 
 HI，我是 happypeter，本套课程叫做 《Rails 10日谈》，我来和你分享用 Ruby On Rails 打造一个 Web 应用程序的过程。
 
