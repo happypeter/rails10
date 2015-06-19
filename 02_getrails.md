@@ -46,7 +46,7 @@ title: 安装 rails
 
     echo "gem: --no-ri --no-rdoc" > ~/.gemrc
 
-这样可以让装包过程变得快一点。
+这样可以让装包过程变得快一点。国内的机器也可以考虑使用国内的 [ruby 镜像](http://ruby.taobao.org/) 。
 
 ![](http://media.haoduoshipin.com/pic/rails10/rails.jpeg)
 
