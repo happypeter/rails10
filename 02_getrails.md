@@ -69,5 +69,10 @@ title: 安装 rails
 
 因为是本地开发环境，就不设置密码了。
 
+<!-- update: 今天在 vagrant+ubuntu14.04 中安装 rails 遇到了极大困难
+总是 gem install rails 总是报错："SSL error..."
+解决方法：翻墙。用 yunti 的那种方式，我自己的 fff 好像不行
+改为 ruby.taobao 就会连不上
+ -->
 
 
